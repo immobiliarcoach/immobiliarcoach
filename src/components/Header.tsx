@@ -14,9 +14,9 @@ const Header = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-3 md:gap-4">
-            <a href="#newsletter">
+            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
               <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
-                ISCRIVITI
+                PRENOTA UNA CALL
               </Button>
             </a>
           </div>
