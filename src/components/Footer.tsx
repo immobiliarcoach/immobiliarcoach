@@ -1,12 +1,11 @@
 import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
-  const helpLinks = [{ label: "CONTACT", href: "mailto:hello@vesper.com" }];
+  const helpLinks = [{ label: "CONTATTACI", href: "mailto:info@immobiliarcoach.it" }];
 
   const socialLinks = [
     { label: "INSTAGRAM", href: "https://instagram.com" },
-    { label: "TWITTER", href: "https://twitter.com" },
-    { label: "PINTEREST", href: "https://pinterest.com" },
+    { label: "LINKEDIN", href: "https://linkedin.com" },
   ];
 
   return (
@@ -15,8 +14,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
           {/* Logo Section */}
           <div className="md:col-span-1">
-            <div className="font-serif text-3xl md:text-4xl font-bold italic">
-              VESPER
+            <div className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
+              IMMOBILIAR COACH
             </div>
           </div>
 
@@ -59,7 +58,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-foreground/20">
           <p className="text-sm text-center md:text-left uppercase">
-            © 2025 VESPER. ALL RIGHTS RESERVED.
+            © 2026 IMMOBILIAR COACH. TUTTI I DIRITTI RISERVATI.
           </p>
         </div>
       </div>

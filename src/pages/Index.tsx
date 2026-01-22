@@ -22,15 +22,13 @@ const Index = () => {
         {/* Hero Section */}
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-6xl md:text-[120px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.72] tracking-[-2px] max-[700px]:tracking-[-1px]">
-              VESPER
+            <h1 className="text-5xl md:text-[100px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.85] tracking-[-2px] max-[700px]:tracking-[-1px]">
+              IMMOBILIAR COACH
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
-              I'm a fashion curator sharing my passion for timeless style,
-              sustainable design, and the stories behind what we wear. From
-              building capsule wardrobes to discovering emerging designers, this
-              is where we celebrate fashion as a form of self-expression and
-              mindful creativity.
+              Guida pratica per chi compra casa e vuole capire davvero cosa sta firmando.
+              Contenuti chiari e indipendenti sui documenti, le decisioni e i passaggi
+              più delicati dell'acquisto immobiliare.
             </p>
 
             {/* Newsletter CTA */}
@@ -57,7 +55,7 @@ const Index = () => {
         {visibleArticles < articles.length && (
           <div className="text-center py-12">
             <Button onClick={loadMore} variant="transparent">
-              LOAD MORE
+              CARICA ALTRI
             </Button>
           </div>
         )}

@@ -22,7 +22,7 @@ const NewsletterForm = ({
 
     // Simulate API call
     setTimeout(() => {
-      toast.success("Thanks for subscribing!");
+      toast.success("Grazie per l'iscrizione!");
       setEmail("");
       setIsSubmitting(false);
     }, 1000);
@@ -37,7 +37,7 @@ const NewsletterForm = ({
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="SUBSCRIBE TO THE NEWSLETTER"
+        placeholder="ISCRIVITI ALLA NEWSLETTER"
         required
         className={`font-sans w-full md:min-w-72 min-h-full bg-transparent border-0 border-b-2 border-foreground text-foreground placeholder:text-foreground uppercase focus:outline-none focus:border-foreground pb-1 ${inputClassName}`}
       />
@@ -46,7 +46,7 @@ const NewsletterForm = ({
         disabled={isSubmitting}
         className={`btn-transparent font-sans whitespace-nowrap disabled:opacity-50 flex flex-row items-center justify-center ${buttonClassName}`}
       >
-        {isSubmitting ? "SIGNING UP..." : "SIGN UP"}
+        {isSubmitting ? "ISCRIZIONE..." : "ISCRIVITI"}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
       </button>
     </form>
