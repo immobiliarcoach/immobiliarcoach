@@ -20,12 +20,12 @@ export const articles: Article[] = [
     title: "VISURA CATASTALE",
     excerpt: "La visura catastale è il primo documento da controllare quando compri casa. Capire cosa contiene ti aiuta a evitare errori banali ma costosi.",
     date: "22 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=800&fit=crop",
     slug: "visura-catastale",
-    colorClass: "bg-vibrant-purple",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "6 min",
     content: `
@@ -56,12 +56,12 @@ export const articles: Article[] = [
     title: "PLANIMETRIA CATASTALE",
     excerpt: "Confrontare la planimetria con lo stato reale della casa è uno dei controlli più sottovalutati da chi compra.",
     date: "18 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=800&h=800&fit=crop",
     slug: "planimetria-catastale",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "7 min",
     content: `
@@ -92,12 +92,12 @@ export const articles: Article[] = [
     title: "ATTO DI PROVENIENZA",
     excerpt: "Sapere come il venditore ha acquisito la casa è fondamentale per capire se può venderla senza problemi.",
     date: "14 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=800&fit=crop",
     slug: "atto-di-provenienza",
-    colorClass: "bg-vibrant-mint",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "6 min",
     content: `
@@ -128,12 +128,12 @@ export const articles: Article[] = [
     title: "ISPEZIONE IPOTECARIA",
     excerpt: "L'ispezione ipotecaria serve a scoprire vincoli e ipoteche che possono pesare sull'acquisto.",
     date: "10 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=800&fit=crop",
     slug: "ispezione-ipotecaria",
-    colorClass: "bg-vibrant-coral",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "5 min",
     content: `
@@ -164,12 +164,12 @@ export const articles: Article[] = [
     title: "TITOLI EDILIZI",
     excerpt: "I titoli edilizi raccontano se ciò che vedi è stato autorizzato o no.",
     date: "6 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=800&fit=crop",
     slug: "titoli-edilizi",
-    colorClass: "bg-vibrant-blue",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "7 min",
     content: `
@@ -200,12 +200,12 @@ export const articles: Article[] = [
     title: "CONFORMITÀ URBANISTICA",
     excerpt: "Conformità urbanistica e catastale non sono la stessa cosa. Capirlo evita errori gravi.",
     date: "2 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1464938050520-ef2571efcc1b?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=800&fit=crop",
     slug: "conformita-urbanistica",
-    colorClass: "bg-vibrant-magenta",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "6 min",
     content: `
@@ -236,12 +236,12 @@ export const articles: Article[] = [
     title: "AGIBILITÀ IMMOBILE",
     excerpt: "L'agibilità indica se una casa è idonea all'uso abitativo secondo la normativa.",
     date: "28 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=800&fit=crop",
     slug: "agibilita-immobile",
-    colorClass: "bg-vibrant-orange",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "5 min",
     content: `
@@ -272,12 +272,12 @@ export const articles: Article[] = [
     title: "APE ENERGETICO",
     excerpt: "L'APE non serve solo per la classe energetica: ha effetti pratici sull'acquisto.",
     date: "24 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&h=800&fit=crop",
     slug: "ape-energetico",
-    colorClass: "bg-vibrant-lavender",
+    colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "4 min",
     content: `
@@ -308,12 +308,12 @@ export const articles: Article[] = [
     title: "MUTUO E PERIZIA",
     excerpt: "Mutuo e perizia sono momenti delicati: prepararsi evita sorprese.",
     date: "20 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?w=800&h=800&fit=crop",
     slug: "mutuo-e-perizia",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "7 min",
     content: `
