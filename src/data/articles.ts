@@ -17,7 +17,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "1",
-    title: "CONSULENZA STRATEGICA DI RICERCA IMMOBILIARE",
+    title: "RICERCA IMMOBILIARE",
     excerpt: "La ricerca è il primo momento in cui si crea confusione. Impostarla con metodo significa arrivare alla scelta con criteri chiari e senza stanchezza decisionale.",
     date: "22 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=800&fit=crop",
@@ -53,7 +53,7 @@ export const articles: Article[] = [
   },
   {
     id: "2",
-    title: "CONSULENZA DI PREPARAZIONE ALLA PROPOSTA",
+    title: "PREPARAZIONE ALLA PROPOSTA",
     excerpt: "Fare un'offerta è una decisione delicata. Valutare se farla, come farla e quando fermarsi protegge l'acquirente da pressioni e rimpianti.",
     date: "18 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=800&h=800&fit=crop",
@@ -89,7 +89,7 @@ export const articles: Article[] = [
   },
   {
     id: "3",
-    title: "CONSULENZA DI ANALISI DOCUMENTALE (STOP / GO)",
+    title: "ANALISI DOCUMENTALE (STOP / GO)",
     excerpt: "I documenti raccontano la verità sull'immobile. Analizzarli serve a capire se è davvero acquistabile prima di impegnarsi.",
     date: "14 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=800&fit=crop",
@@ -125,7 +125,7 @@ export const articles: Article[] = [
   },
   {
     id: "4",
-    title: "CONSULENZA DI TUTELA PRELIMINARE",
+    title: "TUTELA PRELIMINARE",
     excerpt: "Il preliminare concentra il rischio dell'acquisto. Capirlo prima di firmare permette di sapere cosa si rischia e cosa no.",
     date: "10 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=800&fit=crop",
@@ -161,7 +161,7 @@ export const articles: Article[] = [
   },
   {
     id: "5",
-    title: "CONSULENZA DI GESTIONE MUTUO E PERIZIA",
+    title: "GESTIONE MUTUO E PERIZIA",
     excerpt: "Mutuo e perizia sono momenti critici. Arrivare preparati al confronto con banca e perito riduce blocchi e tensioni.",
     date: "6 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=800&fit=crop",
@@ -197,7 +197,7 @@ export const articles: Article[] = [
   },
   {
     id: "6",
-    title: "CONSULENZA DI VERIFICA PRE-ROGITO",
+    title: "VERIFICA PRE-ROGITO",
     excerpt: "Il rogito è la firma definitiva. I controlli finali e l'allineamento evitano sorprese nell'ultimo passo.",
     date: "2 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=800&fit=crop",
