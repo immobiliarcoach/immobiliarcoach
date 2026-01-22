@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import Button from "./Button";
-
 interface ArticleCardProps {
   title: string;
   excerpt: string;
@@ -10,38 +9,21 @@ interface ArticleCardProps {
   slug: string;
   colorClass?: string;
 }
-
 const ArticleCard = ({
   title,
   excerpt,
   date,
   image,
   slug,
-  colorClass = "bg-vibrant-purple",
+  colorClass = "bg-vibrant-purple"
 }: ArticleCardProps) => {
-  return (
-    <Link to={`/article/${slug}`} className="block">
-      <article
-        className={cn(
-          "card-hover rounded-3xl overflow-hidden flex flex-col h-full",
-          colorClass
-        )}
-      >
+  return <Link to={`/article/${slug}`} className="block">
+      <article className={cn("card-hover rounded-3xl overflow-hidden flex flex-col h-full", colorClass)}>
         {/* Image */}
         <div className="aspect-square overflow-hidden p-4 md:p-5">
           <div className="relative w-full h-full rounded-2xl overflow-hidden">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover transition-transform duration-500 grayscale"
-            />
-            <div
-              className={cn(
-                "absolute inset-0 mix-blend-multiply opacity-60",
-                colorClass
-              )}
-              aria-hidden="true"
-            />
+            <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 grayscale" />
+            <div className={cn("absolute inset-0 mix-blend-multiply opacity-60", colorClass)} aria-hidden="true" />
           </div>
         </div>
 
@@ -50,7 +32,7 @@ const ArticleCard = ({
           <time className="text-sm font-medium text-foreground/70 mb-3 block font-sans">
             {date}
           </time>
-          <h2 className="text-5xl md:text-6xl leading-[0.8] mb-3 font-sans font-extrabold tracking-tighter">
+          <h2 className="text-5xl leading-[0.8] mb-3 font-sans font-extrabold tracking-tighter md:text-4xl">
             {title}
           </h2>
           <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">
@@ -61,8 +43,6 @@ const ArticleCard = ({
           </Button>
         </div>
       </article>
-    </Link>
-  );
+    </Link>;
 };
-
 export default ArticleCard;
