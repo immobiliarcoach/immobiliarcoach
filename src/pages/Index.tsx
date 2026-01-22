@@ -22,16 +22,16 @@ const Index = () => {
         {/* Hero Section */}
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center mb-6 leading-[0.9] tracking-[-1px] md:tracking-[-2px]">
-              Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.9] tracking-[-2px] md:tracking-[-3px] uppercase">
+              Immobiliar Coach
             </h1>
             
-            <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
-              Un servizio di consulenza per privati che stanno acquistando casa e vogliono chiarezza, metodo e protezione prima delle decisioni più delicate.
+            <p className="text-xl md:text-2xl font-semibold text-foreground mb-4 max-w-2xl mx-auto">
+              Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
             </p>
 
-            <p className="text-sm md:text-base text-foreground/60 mb-8 max-w-xl mx-auto">
-              Non vendiamo immobili. Non facciamo intermediazione. Lavoriamo dalla parte di chi compra.
+            <p className="text-base md:text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
+              Un servizio di consulenza per privati che stanno acquistando casa e vogliono chiarezza, metodo e protezione prima delle decisioni più delicate.
             </p>
 
             {/* CTA */}
@@ -43,7 +43,7 @@ const Index = () => {
         <section className="px-5 md:px-20 pb-12 md:pb-16">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              Comprare casa è una delle decisioni economiche più importanti della vita. Eppure, la maggior parte delle persone affronta questo percorso affidandosi a sensazioni, pressioni esterne e informazioni frammentate.
+              Comprare casa è una delle decisioni economiche più importanti della vita.
             </p>
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mt-4">
               <strong>Immobiliar Coach</strong> nasce per aiutare chi compra casa a orientarsi, valutare e decidere nei momenti che contano davvero.
