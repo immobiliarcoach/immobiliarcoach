@@ -22,14 +22,12 @@ const Index = () => {
         {/* Hero Section */}
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-[100px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.85] tracking-[-2px] max-[700px]:tracking-[-1px]">
-              IMMOBILIAR COACH
-            </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
-              Guida pratica per chi compra casa e vuole capire davvero cosa sta firmando.
-              Contenuti chiari e indipendenti sui documenti, le decisioni e i passaggi
-              più delicati dell'acquisto immobiliare.
+            <p className="text-sm md:text-base uppercase tracking-[2px] text-foreground/60 mb-4 font-sans">
+              Decisioni corrette prima di firmare
             </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center mb-8 leading-[0.9] tracking-[-1px] md:tracking-[-2px]">
+              Consulenze specialistiche per chi compra casa e vuole prendere decisioni consapevoli nei momenti che contano
+            </h1>
 
             {/* Newsletter CTA */}
             <NewsletterForm className="max-w-3xl mx-auto justify-center" />
