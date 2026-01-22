@@ -37,7 +37,7 @@ const NewsletterForm = ({
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="ISCRIVITI ALLA NEWSLETTER"
+        placeholder="INSERISCI LA TUA EMAIL"
         required
         className={`font-sans w-full md:min-w-72 min-h-full bg-transparent border-0 border-b-2 border-foreground text-foreground placeholder:text-foreground uppercase focus:outline-none focus:border-foreground pb-1 ${inputClassName}`}
       />
@@ -46,7 +46,7 @@ const NewsletterForm = ({
         disabled={isSubmitting}
         className={`btn-transparent font-sans whitespace-nowrap disabled:opacity-50 flex flex-row items-center justify-center ${buttonClassName}`}
       >
-        {isSubmitting ? "ISCRIZIONE..." : "ISCRIVITI"}
+        {isSubmitting ? "INVIO..." : "PRENOTA UNA CALL GRATUITA"}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
       </button>
     </form>
