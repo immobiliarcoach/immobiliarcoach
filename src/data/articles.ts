@@ -17,299 +17,191 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "1",
-    title: "VISURA CATASTALE",
-    excerpt: "La visura catastale è il primo documento da controllare quando compri casa. Capire cosa contiene ti aiuta a evitare errori banali ma costosi.",
+    title: "CONSULENZA STRATEGICA DI RICERCA IMMOBILIARE",
+    excerpt: "La ricerca è il primo momento in cui si crea confusione. Impostarla con metodo significa arrivare alla scelta con criteri chiari e senza stanchezza decisionale.",
     date: "22 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=800&fit=crop",
-    slug: "visura-catastale",
+    slug: "consulenza-ricerca-immobiliare",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
-    readTime: "6 min",
+    readTime: "7 min",
     content: `
-      <p>La visura catastale è spesso il primo documento che viene richiesto durante una compravendita immobiliare, ma raramente viene letto con attenzione.</p>
+      <p>La fase di ricerca è spesso sottovalutata, ma è qui che nascono molti degli errori che si trascinano fino al rogito. Senza criteri chiari, ogni visita aggiunge dubbi invece di ridurli.</p>
       
-      <h2>COS'È DAVVERO LA VISURA CATASTALE</h2>
-      <p>È la carta d'identità dell'immobile dal punto di vista catastale. Riporta dati tecnici, intestazione e rendita.</p>
-      <p>Non è una garanzia di regolarità urbanistica, ma un punto di partenza fondamentale.</p>
+      <h2>PERCHÉ LA RICERCA DIVENTA CONFUSIONE</h2>
+      <p>Annunci simili, informazioni incomplete e pareri esterni creano rumore.</p>
+      <p>Senza una direzione, la ricerca si trasforma in accumulo di incertezza.</p>
       
-      <h2>COSA CONTROLLARE SUBITO</h2>
-      <p>È importante verificare che l'intestatario coincida con chi vende e che i dati siano coerenti.</p>
-      <p>In caso di discrepanze, è necessario fermarsi e chiedere chiarimenti.</p>
+      <h2>DEFINIRE CRITERI PRIMA DI INIZIARE</h2>
+      <p>Stabilire priorità e limiti consente di filtrare le opportunità.</p>
+      <p>Non tutte le caratteristiche hanno lo stesso valore nel tempo.</p>
       
-      <h2>ERRORI COMUNI</h2>
-      <p>Molti acquirenti pensano che basti "averla". In realtà va letta e interpretata.</p>
-      <p>Ignorare una visura errata può creare problemi più avanti.</p>
+      <h2>VISITARE CON UN OBIETTIVO</h2>
+      <p>Ogni visita dovrebbe servire a confermare o escludere.</p>
+      <p>Visitare senza obiettivo porta solo stanchezza.</p>
       
-      <h2>QUANDO SERVE UN SUPPORTO</h2>
-      <p>Se emergono dubbi su intestazione o categoria, è il momento di approfondire.</p>
-      <p>Meglio farlo prima della proposta, non dopo.</p>
+      <h2>QUANDO FERMARSI</h2>
+      <p>Capire quando dire no è parte integrante della ricerca.</p>
+      <p>Fermarsi in tempo evita decisioni affrettate.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>La visura catastale non va sottovalutata: è un segnale iniziale della salute documentale dell'immobile.</p>
+      <p>Una ricerca strategica crea chiarezza, riduce stress e prepara a decisioni migliori.</p>
     `
   },
   {
     id: "2",
-    title: "PLANIMETRIA CATASTALE",
-    excerpt: "Confrontare la planimetria con lo stato reale della casa è uno dei controlli più sottovalutati da chi compra.",
+    title: "CONSULENZA DI PREPARAZIONE ALLA PROPOSTA",
+    excerpt: "Fare un'offerta è una decisione delicata. Valutare se farla, come farla e quando fermarsi protegge l'acquirente da pressioni e rimpianti.",
     date: "18 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=800&h=800&fit=crop",
-    slug: "planimetria-catastale",
+    slug: "consulenza-preparazione-proposta",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
-    readTime: "7 min",
+    readTime: "8 min",
     content: `
-      <p>La planimetria catastale rappresenta graficamente l'immobile, ma non sempre riflette la realtà.</p>
+      <p>La proposta di acquisto è il primo atto realmente vincolante. Spesso viene fatta sotto pressione, quando la paura di perdere l'immobile prende il sopravvento.</p>
       
-      <h2>A COSA SERVE LA PLANIMETRIA</h2>
-      <p>Serve a descrivere la distribuzione interna dell'immobile.</p>
-      <p>È uno strumento di confronto, non una certificazione.</p>
+      <h2>LA PRESSIONE DEL MOMENTO</h2>
+      <p>Agenti e contesto spingono verso una scelta rapida.</p>
+      <p>La rapidità raramente tutela chi compra.</p>
       
-      <h2>CONFRONTO CON LA CASA REALE</h2>
-      <p>Ogni stanza, muro e apertura dovrebbe coincidere.</p>
-      <p>Differenze evidenti sono segnali da non ignorare.</p>
+      <h2>VALUTARE SE FARE L'OFFERTA</h2>
+      <p>Non tutte le situazioni richiedono una proposta.</p>
+      <p>Capire quando fermarsi è una forma di tutela.</p>
       
-      <h2>ERRORI FREQUENTI</h2>
-      <p>Bagni spostati, verande chiuse o tramezzi aggiunti sono casi comuni.</p>
-      <p>Non sempre sono sanabili.</p>
+      <h2>COME STRUTTURARE L'OFFERTA</h2>
+      <p>Prezzo, condizioni e tempistiche devono essere coerenti.</p>
+      <p>Ogni elemento ha conseguenze concrete.</p>
       
-      <h2>IMPATTO SU MUTUO E ROGITO</h2>
-      <p>Una planimetria non conforme può bloccare la perizia.</p>
-      <p>Meglio verificare prima di impegnarsi.</p>
+      <h2>IL RUOLO DELLE TUTELE</h2>
+      <p>Le clausole non sono dettagli tecnici.</p>
+      <p>Sono strumenti di protezione per l'acquirente.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>La planimetria è uno specchio: se non riflette la realtà, qualcosa va chiarito.</p>
+      <p>Prepararsi alla proposta significa decidere con lucidità, non con la paura.</p>
     `
   },
   {
     id: "3",
-    title: "ATTO DI PROVENIENZA",
-    excerpt: "Sapere come il venditore ha acquisito la casa è fondamentale per capire se può venderla senza problemi.",
+    title: "CONSULENZA DI ANALISI DOCUMENTALE (STOP / GO)",
+    excerpt: "I documenti raccontano la verità sull'immobile. Analizzarli serve a capire se è davvero acquistabile prima di impegnarsi.",
     date: "14 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=800&fit=crop",
-    slug: "atto-di-provenienza",
+    slug: "consulenza-analisi-documentale",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
-    readTime: "6 min",
+    readTime: "9 min",
     content: `
-      <p>L'atto di provenienza racconta la storia giuridica dell'immobile.</p>
+      <p>Quando arrivano i documenti, molti acquirenti pensano che il peggio sia passato. In realtà è il momento in cui si decide se proseguire o fermarsi.</p>
       
-      <h2>COS'È L'ATTO DI PROVENIENZA</h2>
-      <p>È il documento che spiega come il venditore è diventato proprietario.</p>
-      <p>Può derivare da compravendita, successione o donazione.</p>
+      <h2>PERCHÉ I DOCUMENTI SONO DECISIVI</h2>
+      <p>I documenti definiscono diritti, vincoli e rischi.</p>
+      <p>Non sono una formalità.</p>
       
-      <h2>PERCHÉ È IMPORTANTE</h2>
-      <p>Non tutte le provenienze sono uguali dal punto di vista del rischio.</p>
-      <p>Alcune richiedono maggiore attenzione.</p>
+      <h2>OLTRE LE RASSICURAZIONI</h2>
+      <p>Le parole non sostituiscono ciò che è scritto.</p>
+      <p>Conta solo ciò che risulta dai documenti.</p>
       
-      <h2>DONAZIONI E SUCCESSIONI</h2>
-      <p>Questi casi possono creare problemi in fase di mutuo.</p>
-      <p>È bene chiarirli prima di fare offerte.</p>
+      <h2>PROBLEMI SANABILI E NON SANABILI</h2>
+      <p>Non tutte le irregolarità hanno lo stesso impatto.</p>
+      <p>Capire la differenza evita sorprese future.</p>
       
-      <h2>COSA CONTROLLARE</h2>
-      <p>Quote, diritti reali e vincoli devono essere chiari.</p>
-      <p>Nulla va dato per scontato.</p>
+      <h2>LA DECISIONE STOP O GO</h2>
+      <p>Arrivare a una decisione chiara protegge l'acquirente.</p>
+      <p>Fermarsi in tempo è spesso la scelta più corretta.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>Capire la provenienza significa sapere se stai comprando serenamente.</p>
+      <p>L'analisi documentale è il punto in cui si decide davvero se comprare.</p>
     `
   },
   {
     id: "4",
-    title: "ISPEZIONE IPOTECARIA",
-    excerpt: "L'ispezione ipotecaria serve a scoprire vincoli e ipoteche che possono pesare sull'acquisto.",
+    title: "CONSULENZA DI TUTELA PRELIMINARE",
+    excerpt: "Il preliminare concentra il rischio dell'acquisto. Capirlo prima di firmare permette di sapere cosa si rischia e cosa no.",
     date: "10 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=800&fit=crop",
-    slug: "ispezione-ipotecaria",
+    slug: "consulenza-tutela-preliminare",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
-    readTime: "5 min",
+    readTime: "8 min",
     content: `
-      <p>L'ispezione ipotecaria verifica se sull'immobile gravano vincoli.</p>
+      <p>Il preliminare viene spesso firmato con leggerezza, ma è il contratto che stabilisce le conseguenze economiche in caso di problemi.</p>
       
-      <h2>COSA RIVELA</h2>
-      <p>Mostra ipoteche, pignoramenti e altri gravami.</p>
-      <p>È uno strumento di tutela per l'acquirente.</p>
+      <h2>PERCHÉ IL PRELIMINARE È CRUCIALE</h2>
+      <p>È il momento in cui l'impegno diventa reale.</p>
+      <p>Da qui in poi le conseguenze sono concrete.</p>
       
-      <h2>QUANDO FARLA</h2>
-      <p>Prima del preliminare o comunque prima di impegnarsi seriamente.</p>
-      <p>Non è un dettaglio finale.</p>
+      <h2>CAPARRA E RESPONSABILITÀ</h2>
+      <p>La caparra definisce chi rischia cosa.</p>
+      <p>Non è solo un anticipo.</p>
       
-      <h2>ERRORI COMUNI</h2>
-      <p>Affidarsi a rassicurazioni verbali è rischioso.</p>
-      <p>I vincoli vanno letti nero su bianco.</p>
+      <h2>TEMPISTICHE E MUTUO</h2>
+      <p>Il preliminare deve essere compatibile con i tempi bancari.</p>
+      <p>Scadenze errate creano problemi.</p>
       
-      <h2>GESTIONE DELLE IPOTECHE</h2>
-      <p>Non tutte le ipoteche sono un problema, ma vanno gestite.</p>
-      <p>Serve chiarezza sui tempi di cancellazione.</p>
+      <h2>FIRMARE CONSAPEVOLMENTE</h2>
+      <p>Capire cosa si firma riduce l'ansia.</p>
+      <p>La chiarezza tutela l'acquirente.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>Meglio sapere prima cosa grava sulla casa, che scoprirlo dopo.</p>
+      <p>La tutela preliminare è fondamentale per un acquisto sicuro.</p>
     `
   },
   {
     id: "5",
-    title: "TITOLI EDILIZI",
-    excerpt: "I titoli edilizi raccontano se ciò che vedi è stato autorizzato o no.",
+    title: "CONSULENZA DI GESTIONE MUTUO E PERIZIA",
+    excerpt: "Mutuo e perizia sono momenti critici. Arrivare preparati al confronto con banca e perito riduce blocchi e tensioni.",
     date: "6 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=800&fit=crop",
-    slug: "titoli-edilizi",
+    slug: "consulenza-gestione-mutuo-perizia",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
-    readTime: "7 min",
+    readTime: "9 min",
     content: `
-      <p>I titoli edilizi spiegano la storia urbanistica dell'immobile.</p>
+      <p>Il mutuo non è solo una pratica bancaria, ma un processo complesso che coinvolge più soggetti.</p>
       
-      <h2>COSA SONO</h2>
-      <p>Permessi, concessioni e pratiche depositate nel tempo.</p>
-      <p>Servono a verificare la legittimità delle opere.</p>
+      <h2>COME RAGIONA LA BANCA</h2>
+      <p>La banca valuta sostenibilità e rischio.</p>
+      <p>L'immobile è una garanzia.</p>
       
-      <h2>PERCHÉ CONTANO</h2>
-      <p>Un immobile non conforme può non essere mutuabile.</p>
-      <p>O può creare problemi futuri.</p>
+      <h2>IL RUOLO DELLA PERIZIA</h2>
+      <p>La perizia stima un valore prudente.</p>
+      <p>Non sempre coincide con il prezzo concordato.</p>
       
-      <h2>DIFFORMITÀ EDILIZIE</h2>
-      <p>Non tutte sono sanabili.</p>
-      <p>Vanno valutate caso per caso.</p>
+      <h2>PROBLEMI PIÙ FREQUENTI</h2>
+      <p>Documenti incompleti e aspettative errate.</p>
+      <p>Anticiparli riduce stress.</p>
       
-      <h2>CHI DEVE OCCUPARSENE</h2>
-      <p>Il venditore deve consegnare chiarezza, non problemi.</p>
-      <p>L'acquirente deve sapere cosa sta comprando.</p>
+      <h2>PREPARARSI AL CONFRONTO</h2>
+      <p>Arrivare preparati evita di subire il processo.</p>
+      <p>La preparazione fa la differenza.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>I titoli edilizi sono un passaggio chiave per acquistare serenamente.</p>
+      <p>Gestire mutuo e perizia con metodo porta maggiore serenità.</p>
     `
   },
   {
     id: "6",
-    title: "CONFORMITÀ URBANISTICA",
-    excerpt: "Conformità urbanistica e catastale non sono la stessa cosa. Capirlo evita errori gravi.",
+    title: "CONSULENZA DI VERIFICA PRE-ROGITO",
+    excerpt: "Il rogito è la firma definitiva. I controlli finali e l'allineamento evitano sorprese nell'ultimo passo.",
     date: "2 Gennaio 2026",
     image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=800&fit=crop",
-    slug: "conformita-urbanistica",
-    colorClass: "bg-vibrant-yellow",
-    author: {
-      name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
-    },
-    readTime: "6 min",
-    content: `
-      <p>Molti confondono catasto e urbanistica, ma sono piani diversi.</p>
-      
-      <h2>COSA SIGNIFICA CONFORMITÀ</h2>
-      <p>Vuol dire che ciò che esiste è stato autorizzato.</p>
-      <p>Non basta che sia accatastato.</p>
-      
-      <h2>PROBLEMI PIÙ COMUNI</h2>
-      <p>Modifiche interne non dichiarate.</p>
-      <p>Ampliamenti irregolari.</p>
-      
-      <h2>IMPATTO SULL'ACQUISTO</h2>
-      <p>Può bloccare mutuo e rogito.</p>
-      <p>O trasferire un problema all'acquirente.</p>
-      
-      <h2>QUANDO FERMARSI</h2>
-      <p>Se la situazione non è chiara, è meglio approfondire.</p>
-      <p>Prima di firmare.</p>
-      
-      <h2>CONCLUSIONE</h2>
-      <p>La conformità è una tutela, non una formalità.</p>
-    `
-  },
-  {
-    id: "7",
-    title: "AGIBILITÀ IMMOBILE",
-    excerpt: "L'agibilità indica se una casa è idonea all'uso abitativo secondo la normativa.",
-    date: "28 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=800&fit=crop",
-    slug: "agibilita-immobile",
-    colorClass: "bg-vibrant-yellow",
-    author: {
-      name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
-    },
-    readTime: "5 min",
-    content: `
-      <p>L'agibilità è spesso sottovalutata, ma ha un significato preciso.</p>
-      
-      <h2>COSA ATTESTA</h2>
-      <p>Certifica che l'immobile rispetta requisiti minimi.</p>
-      <p>Non è sempre obbligatoria, ma è rilevante.</p>
-      
-      <h2>QUANDO MANCA</h2>
-      <p>In alcuni immobili più vecchi può non esserci.</p>
-      <p>Va valutato l'impatto.</p>
-      
-      <h2>RAPPORTO CON IL MUTUO</h2>
-      <p>Alcune banche la richiedono.</p>
-      <p>Meglio saperlo prima.</p>
-      
-      <h2>COSA FARE</h2>
-      <p>Capire se è recuperabile o se è un limite.</p>
-      <p>Non ignorare la questione.</p>
-      
-      <h2>CONCLUSIONE</h2>
-      <p>L'agibilità contribuisce alla serenità dell'acquisto.</p>
-    `
-  },
-  {
-    id: "8",
-    title: "APE ENERGETICO",
-    excerpt: "L'APE non serve solo per la classe energetica: ha effetti pratici sull'acquisto.",
-    date: "24 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&h=800&fit=crop",
-    slug: "ape-energetico",
-    colorClass: "bg-vibrant-yellow",
-    author: {
-      name: "Immobiliar Coach",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
-    },
-    readTime: "4 min",
-    content: `
-      <p>L'APE è obbligatorio e fornisce informazioni importanti.</p>
-      
-      <h2>COSA INDICA</h2>
-      <p>La classe energetica e i consumi stimati.</p>
-      <p>Influisce sui costi futuri.</p>
-      
-      <h2>PERCHÉ GUARDARLO</h2>
-      <p>Non è solo un allegato.</p>
-      <p>Aiuta a valutare sostenibilità e spese.</p>
-      
-      <h2>ERRORI COMUNI</h2>
-      <p>Ignorare l'APE o leggerlo superficialmente.</p>
-      <p>Ogni classe ha conseguenze diverse.</p>
-      
-      <h2>RAPPORTO CON IL VALORE</h2>
-      <p>Incide sulla rivendibilità.</p>
-      <p>E sul comfort abitativo.</p>
-      
-      <h2>CONCLUSIONE</h2>
-      <p>L'APE è uno strumento informativo da usare, non da archiviare.</p>
-    `
-  },
-  {
-    id: "9",
-    title: "MUTUO E PERIZIA",
-    excerpt: "Mutuo e perizia sono momenti delicati: prepararsi evita sorprese.",
-    date: "20 Dicembre 2025",
-    image: "https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?w=800&h=800&fit=crop",
-    slug: "mutuo-e-perizia",
+    slug: "consulenza-verifica-pre-rogito",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Immobiliar Coach",
@@ -317,26 +209,26 @@ export const articles: Article[] = [
     },
     readTime: "7 min",
     content: `
-      <p>Il mutuo è un processo, non un semplice sì o no.</p>
+      <p>Il rogito rappresenta la conclusione del percorso di acquisto, ma anche il momento più delicato dal punto di vista formale.</p>
       
-      <h2>COME RAGIONA LA BANCA</h2>
-      <p>Valuta reddito, stabilità e rischio.</p>
-      <p>L'immobile è una garanzia.</p>
+      <h2>COSA SUCCEDE AL ROGITO</h2>
+      <p>Si firmano atti e si effettuano pagamenti definitivi.</p>
+      <p>Ogni dettaglio conta.</p>
       
-      <h2>LA PERIZIA</h2>
-      <p>Stima un valore prudente.</p>
-      <p>Non coincide sempre con il prezzo.</p>
+      <h2>CONTROLLI FINALI</h2>
+      <p>Documenti e importi devono essere coerenti.</p>
+      <p>Nulla va dato per scontato.</p>
       
-      <h2>PROBLEMI FREQUENTI</h2>
-      <p>Valore inferiore al previsto.</p>
-      <p>Documenti incompleti.</p>
+      <h2>GESTIRE LA PRESSIONE FINALE</h2>
+      <p>La stanchezza può portare a errori.</p>
+      <p>Meglio fermarsi che firmare con dubbi.</p>
       
-      <h2>PREPARAZIONE</h2>
-      <p>Anticipare i problemi riduce stress.</p>
-      <p>Meglio sapere prima che dopo.</p>
+      <h2>ALLINEAMENTO TRA LE PARTI</h2>
+      <p>Banca, notaio e venditore devono essere allineati.</p>
+      <p>L'ultimo controllo tutela l'acquirente.</p>
       
       <h2>CONCLUSIONE</h2>
-      <p>Mutuo e perizia vanno gestiti, non subiti.</p>
+      <p>La verifica pre-rogito è l'ultimo passo per firmare con serenità.</p>
     `
   }
 ];
