@@ -1,3 +1,5 @@
+import contractStylusPen from "@/assets/contract-stylus-pen.jpg";
+
 export interface Article {
   id: string;
   title: string;
@@ -56,7 +58,7 @@ export const articles: Article[] = [
     title: "PREPARAZIONE ALLA PROPOSTA",
     excerpt: "Fare un'offerta è una decisione delicata. Valutare se farla, come farla e quando fermarsi protegge l'acquirente da pressioni e rimpianti.",
     date: "18 Gennaio 2026",
-    image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=800&h=800&fit=crop",
+    image: contractStylusPen,
     slug: "consulenza-preparazione-proposta",
     colorClass: "bg-vibrant-yellow",
     author: {
