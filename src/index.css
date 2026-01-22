@@ -19,10 +19,10 @@
     --card: 0 0% 100%;
     --card-foreground: 0 0% 8%;
 
-    /* Primary Action Colors - Oro */
-    --primary: 43 74% 49%; /* Oro */
+    /* Primary Action Colors - Oro Scuro (CTA) */
+    --primary: 43 74% 42%; /* Oro scuro */
     --primary-foreground: 0 0% 8%;
-    --primary-hover: 43 74% 40%; /* Oro scuro */
+    --primary-hover: 43 74% 35%; /* Oro ancora più scuro */
 
     /* Secondary Actions - Blu */
     --secondary: 215 60% 35%; /* Blu profondo */
@@ -33,15 +33,15 @@
     --accent-red: 215 60% 35%; /* Blu */
     --accent-pink: 43 74% 49%; /* Oro */
 
-    /* Card Backgrounds - Palette bianco/grigio/blu/oro */
-    --card-yellow: 43 60% 85%; /* Oro chiaro */
-    --card-purple: 215 40% 90%; /* Blu chiarissimo */
-    --card-magenta: 215 60% 35%; /* Blu profondo */
-    --card-blue: 215 50% 55%; /* Blu medio */
-    --card-coral: 0 0% 94%; /* Grigio chiaro */
-    --card-mint: 43 50% 80%; /* Oro chiaro */
-    --card-orange: 43 74% 49%; /* Oro */
-    --card-lavender: 0 0% 90%; /* Grigio */
+    /* Card Backgrounds - Tutti Oro */
+    --card-yellow: 43 45% 88%; /* Oro crema */
+    --card-purple: 43 45% 88%; /* Oro crema */
+    --card-magenta: 43 45% 88%; /* Oro crema */
+    --card-blue: 43 45% 88%; /* Oro crema */
+    --card-coral: 43 45% 88%; /* Oro crema */
+    --card-mint: 43 45% 88%; /* Oro crema */
+    --card-orange: 43 45% 88%; /* Oro crema */
+    --card-lavender: 43 45% 88%; /* Oro crema */
 
     /* Dark Mode Colors */
     --dark-background: 0 0% 8%;
