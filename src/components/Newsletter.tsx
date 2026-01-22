@@ -11,7 +11,6 @@ const Newsletter = ({ variant = "colorful" }: NewsletterProps) => {
         <div className="px-5 md:px-20 max-w-4xl mx-auto">
           <NewsletterForm
             className="justify-center"
-            inputClassName="border-white text-white placeholder:text-white"
             buttonClassName="border-white text-white hover:bg-white hover:text-black"
           />
         </div>

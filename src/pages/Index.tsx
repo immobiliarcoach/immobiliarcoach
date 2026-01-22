@@ -32,10 +32,7 @@ const Index = () => {
             </p>
 
             {/* Newsletter CTA */}
-            <NewsletterForm
-              className="max-w-3xl mx-auto justify-center"
-              inputClassName="border-b-2"
-            />
+            <NewsletterForm className="max-w-3xl mx-auto justify-center" />
           </div>
         </section>
 

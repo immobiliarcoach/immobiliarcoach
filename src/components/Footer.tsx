@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div id="newsletter" className="md:col-span-1">
-            <NewsletterForm inputClassName="min-w-72 border-secondary-foreground text-secondary-foreground placeholder:text-secondary-foreground" buttonClassName="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary" />
+            <NewsletterForm buttonClassName="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary" />
           </div>
         </div>
 
