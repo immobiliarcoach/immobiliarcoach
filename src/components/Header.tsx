@@ -8,15 +8,15 @@ const Header = () => {
       <div className="px-5 md:px-20 py-5 md:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-serif text-2xl md:text-3xl font-bold italic">
-            Vesper
+          <Link to="/" className="text-xl md:text-2xl font-bold uppercase tracking-tight">
+            Immobiliar Coach
           </Link>
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-3 md:gap-4">
             <a href="#newsletter">
               <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
-                SUBSCRIBE
+                ISCRIVITI
               </Button>
             </a>
           </div>
