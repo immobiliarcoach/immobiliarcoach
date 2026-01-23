@@ -26,15 +26,6 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.9] tracking-[-2px] md:tracking-[-3px] uppercase">
               Immobiliar Coach
             </h1>
-
-            {/* Paris Restaurant Image */}
-            <div className="mb-8">
-              <img 
-                src={parisRestaurant} 
-                alt="Ristorante parigino" 
-                className="w-full max-w-2xl mx-auto rounded-lg shadow-lg grayscale"
-              />
-            </div>
             
             <p className="text-xl md:text-2xl font-semibold text-foreground mb-4 max-w-2xl mx-auto">
               Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
