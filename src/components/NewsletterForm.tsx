@@ -12,7 +12,7 @@ const NewsletterForm = ({
   return (
     <div className={`flex items-center justify-center ${className}`}>
       <a
-        href="https://calendly.com"
+        href="https://calendly.com/immobiliarcoach/30min"
         target="_blank"
         rel="noopener noreferrer"
         className={`btn-transparent font-sans whitespace-nowrap flex flex-row items-center justify-center gap-2 ${buttonClassName}`}
