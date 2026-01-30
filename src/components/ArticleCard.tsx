@@ -39,7 +39,7 @@ const ArticleCard = ({
             {excerpt}
           </p>
           <Button variant="filled" className="text-xs py-2 px-5 self-start">
-            READ MORE
+            SCOPRI DI PIÙ
           </Button>
         </div>
       </article>
