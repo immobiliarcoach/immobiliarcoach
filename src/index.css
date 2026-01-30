@@ -1,63 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Design System - Bianco, Nero, Grigio, Blu, Oro */
+/* Design System - Blu #1D4E89, Bianco #FFFFFF, Oro #BA8D1C */
 
 @layer base {
   :root {
-    /* Base Colors - Clean White & Black */
-    --background: 0 0% 100%; /* Bianco puro */
-    --foreground: 0 0% 8%; /* Nero */
+    /* Base Colors */
+    --background: 0 0% 100%; /* Bianco */
+    --foreground: 0 4% 15%; /* #272525 */
 
     /* Card Colors */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 4% 15%;
 
-    /* Primary Action Colors - Oro Scuro (CTA) */
-    --primary: 43 74% 42%; /* Oro scuro */
-    --primary-foreground: 0 0% 8%;
-    --primary-hover: 43 74% 35%; /* Oro ancora più scuro */
+    /* Primary Action Colors - Oro #BA8D1C */
+    --primary: 43 75% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 43 75% 35%;
 
-    /* Secondary Actions - Blu */
-    --secondary: 215 60% 35%; /* Blu profondo */
+    /* Secondary Actions - Blu #1D4E89 */
+    --secondary: 212 64% 33%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 215 60% 28%;
+    --secondary-hover: 212 64% 26%;
 
     /* Accent Colors */
-    --accent-red: 215 60% 35%; /* Blu */
-    --accent-pink: 43 74% 49%; /* Oro */
+    --accent-red: 212 64% 33%; /* Blu */
+    --accent-pink: 43 75% 42%; /* Oro */
 
-    /* Card Backgrounds - Tutti Oro */
-    --card-yellow: 43 45% 88%; /* Oro crema */
-    --card-purple: 43 45% 88%; /* Oro crema */
-    --card-magenta: 43 45% 88%; /* Oro crema */
-    --card-blue: 43 45% 88%; /* Oro crema */
-    --card-coral: 43 45% 88%; /* Oro crema */
-    --card-mint: 43 45% 88%; /* Oro crema */
-    --card-orange: 43 45% 88%; /* Oro crema */
-    --card-lavender: 43 45% 88%; /* Oro crema */
+    /* Card Backgrounds - Oro chiaro */
+    --card-yellow: 43 45% 92%;
+    --card-purple: 43 45% 92%;
+    --card-magenta: 43 45% 92%;
+    --card-blue: 43 45% 92%;
+    --card-coral: 43 45% 92%;
+    --card-mint: 43 45% 92%;
+    --card-orange: 43 45% 92%;
+    --card-lavender: 43 45% 92%;
 
     /* Dark Mode Colors */
-    --dark-background: 0 0% 8%;
-    --dark-card: 215 30% 15%;
+    --dark-background: 0 4% 15%;
+    --dark-card: 212 30% 15%;
     --dark-muted: 0 0% 35%;
 
     /* Status Colors */
-    --success: 215 60% 35%;
-    --warning: 43 74% 49%;
-    --error: 0 0% 35%;
-    --info: 215 60% 35%;
+    --success: 212 64% 33%;
+    --warning: 43 75% 42%;
+    --error: 0 65% 50%;
+    --info: 212 64% 33%;
 
     /* UI Elements */
     --border: 0 0% 85%;
     --input: 0 0% 85%;
-    --ring: 43 74% 49%;
+    --ring: 212 64% 33%;
     --radius: 0.5rem;
 
     /* Transitions */
@@ -65,29 +63,28 @@
     --transition-medium: 300ms ease-in-out;
     --transition-slow: 500ms cubic-bezier(0.34, 1, 0.64, 1);
     --popover: 0 0% 98%;
-    --popover-foreground: 0 0% 8%;
-    --muted: 0 0% 65%; /* Grigio */
-    --muted-foreground: 0 0% 40%; /* Grigio scuro */
-    --accent: 215 60% 35%;
+    --popover-foreground: 0 4% 15%;
+    --muted: 0 0% 65%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 212 64% 33%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 0% 35%;
+    --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
-    --chart-1: 215 60% 35%;
-    --chart-2: 43 74% 49%;
+    --chart-1: 212 64% 33%;
+    --chart-2: 43 75% 42%;
     --chart-3: 0 0% 65%;
     --chart-4: 0 0% 50%;
     --chart-5: 0 0% 35%;
     --sidebar: 0 0% 100%;
-    --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 43 74% 49%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 215 60% 35%;
+    --sidebar-foreground: 0 4% 15%;
+    --sidebar-primary: 43 75% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 212 64% 33%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 85%;
-    --sidebar-ring: 43 74% 49%;
+    --sidebar-ring: 212 64% 33%;
     --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    --font-serif: 'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --font-heading: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
@@ -155,7 +152,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Lora", Georgia, serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
   h1,
@@ -166,9 +163,9 @@
   h6,
   button,
   nav,
-  .heading,
-  .sans-serif {
-    font-family: "Supreme", system-ui, -apple-system, sans-serif;
+  .heading {
+    font-family: "Sarabun", system-ui, sans-serif;
+    font-weight: 700;
   }
 }
 
