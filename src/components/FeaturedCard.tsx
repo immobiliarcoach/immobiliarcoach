@@ -37,7 +37,7 @@ const FeaturedCard = ({
               {excerpt}
             </p>
             <Button variant="filled" className="text-sm py-3 px-6 self-start">
-              READ MORE
+              SCOPRI DI PIÙ
             </Button>
           </div>
 
