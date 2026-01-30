@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import logo from "@/assets/logo-immobiliar-coach.jpeg";
 
 const Header = () => {
 
@@ -9,8 +8,8 @@ const Header = () => {
       <div className="px-5 md:px-20 py-5 md:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={logo} alt="Immobiliar Coach" className="h-10 md:h-12 w-auto" />
+          <Link to="/" className="text-xl md:text-2xl font-bold uppercase tracking-tight">
+            Immobiliar Coach
           </Link>
 
           {/* Right Side Actions */}

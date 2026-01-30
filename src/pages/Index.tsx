@@ -6,7 +6,7 @@ import FeaturedCard from "@/components/FeaturedCard";
 import NewsletterForm from "@/components/NewsletterForm";
 import Button from "@/components/Button";
 import { articles } from "@/data/articles";
-import logo from "@/assets/logo-immobiliar-coach.jpeg";
+import parisRestaurant from "@/assets/paris-restaurant-bw.jpg";
 
 const Index = () => {
   const [visibleArticles, setVisibleArticles] = useState(6);
@@ -23,11 +23,9 @@ const Index = () => {
         {/* Hero Section */}
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <img 
-              src={logo} 
-              alt="Immobiliar Coach" 
-              className="h-24 md:h-32 lg:h-40 w-auto mx-auto mb-6"
-            />
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.9] tracking-[-2px] md:tracking-[-3px] uppercase">
+              Immobiliar Coach
+            </h1>
             
             <p className="text-xl md:text-2xl font-semibold text-foreground mb-4 max-w-2xl mx-auto">
               Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
