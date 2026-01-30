@@ -15,11 +15,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
           {/* Logo Section */}
           <div className="md:col-span-1">
+          <div className="bg-white p-3 rounded-lg inline-block">
             <img 
               src={logoImg} 
               alt="Immobiliar Coach" 
-              className="h-16 md:h-20 w-auto brightness-0 invert"
+              className="h-12 md:h-16 w-auto"
             />
+          </div>
           </div>
 
           {/* Connect */}
