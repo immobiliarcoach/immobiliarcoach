@@ -1,4 +1,5 @@
 import NewsletterForm from "./NewsletterForm";
+import logoImg from "@/assets/logo-immobiliar-coach.png";
 
 const Footer = () => {
   const helpLinks = [{ label: "CONTATTACI", href: "mailto:info@immobiliarcoach.it" }];
@@ -14,9 +15,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
           {/* Logo Section */}
           <div className="md:col-span-1">
-            <div className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
-              IMMOBILIAR COACH
-            </div>
+            <img 
+              src={logoImg} 
+              alt="Immobiliar Coach" 
+              className="h-16 md:h-20 w-auto brightness-0 invert"
+            />
           </div>
 
           {/* Connect */}
