@@ -14,9 +14,9 @@ const Header = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-3 md:gap-4">
-            <a href="https://calendly.com/immobiliarcoach/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://quiz1-immobiliar.lovable.app" target="_blank" rel="noopener noreferrer">
               <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
-                PRENOTA UNA CALL
+                INIZIA IL QUIZ
               </Button>
             </a>
           </div>

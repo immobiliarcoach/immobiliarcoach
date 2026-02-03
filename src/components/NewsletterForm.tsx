@@ -12,12 +12,12 @@ const NewsletterForm = ({
   return (
     <div className={`flex items-center justify-center ${className}`}>
       <a
-        href="https://calendly.com/immobiliarcoach/30min"
+        href="https://quiz1-immobiliar.lovable.app"
         target="_blank"
         rel="noopener noreferrer"
         className={`btn-transparent font-sans whitespace-nowrap flex flex-row items-center justify-center gap-2 ${buttonClassName}`}
       >
-        PRENOTA UNA CALL GRATUITA
+        INIZIA IL QUIZ
         <ArrowRight className="w-4 h-4" />
       </a>
     </div>
