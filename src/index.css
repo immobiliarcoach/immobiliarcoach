@@ -161,9 +161,7 @@
   h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, label, blockquote {
     overflow-wrap: break-word;
     word-wrap: break-word;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    hyphens: none;
   }
 
   h1,
