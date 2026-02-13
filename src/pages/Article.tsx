@@ -14,7 +14,7 @@ const Article = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <main className="px-5 md:px-20 py-20 text-center">
-          <h1 className="heading-lg mb-6 font-sans">ARTICLE NOT FOUND</h1>
+          <h1 className="heading-lg mb-6 font-sans text-brand-navy">ARTICLE NOT FOUND</h1>
           <Link to="/">
             <Button variant="transparent" showArrow={false}>
               Return to Homepage
@@ -43,7 +43,7 @@ const Article = () => {
               <div className="float-left pl-[30px] w-full min-h-[1px] relative sm-590:left-[16.66667%] sm-590:w-2/3 box-border">
                 {/* Article Header */}
                 <header className="mb-[30px] sm-590:mb-[50px]">
-                  <h1 className="text-4xl sm:text-6xl md:text-[120px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.85] md:leading-[0.75] tracking-[-1px] md:tracking-[-2px]">
+                  <h1 className="text-4xl sm:text-6xl md:text-[120px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.85] md:leading-[0.75] tracking-[-1px] md:tracking-[-2px] text-brand-navy">
                     {article.title}
                   </h1>
 
@@ -82,7 +82,7 @@ const Article = () => {
                 {article.content ? (
                   <div
                     className="prose prose-lg max-w-none font-serif
-                               prose-headings:font-sans prose-headings:font-bold
+                               prose-headings:font-sans prose-headings:font-bold prose-headings:text-brand-navy
                                prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-6
                                prose-p:text-lg md:prose-p:text-xl prose-p:leading-[1.75] prose-p:mb-6
                                prose-img:rounded-2xl prose-img:my-8"
@@ -102,7 +102,7 @@ const Article = () => {
                 )}
 
                 {/* Horizontal Rule */}
-                <hr className="my-10 sm-590:my-[60px] mx-auto h-px border-0 border-t border-black w-full" />
+                <hr className="my-10 sm-590:my-[60px] mx-auto h-px border-0 border-t border-brand-navy/20 w-full" />
               </div>
             </div>
 
@@ -110,9 +110,9 @@ const Article = () => {
             <div className="text-center clear-both">
               <Link
                 to="/"
-                className="text-lg sm-590:text-xl text-center no-underline font-sans font-bold uppercase tracking-[0.0em] leading-[1.2] inline-block hover:opacity-70 transition-opacity"
+                className="text-lg sm-590:text-xl text-center no-underline font-sans font-bold uppercase tracking-[0.0em] leading-[1.2] inline-block text-brand-navy hover:text-brand-gold transition-colors"
               >
-                ← BACK TO BLOG
+                ← TORNA AL BLOG
               </Link>
             </div>
           </div>
@@ -121,8 +121,8 @@ const Article = () => {
         {/* Related Articles */}
         <section className="border-t border-foreground/10">
           <div className="px-5 md:px-20 pt-12 md:pt-16 pb-8 md:pb-12">
-            <h2 className="heading-md mb-8 text-center font-sans">
-              YOU MIGHT ALSO LIKE
+            <h2 className="heading-md mb-8 text-center font-sans text-brand-navy">
+              POTREBBE INTERESSARTI
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-x-5 gap-y-8 md:pt-0 md:px-20 md:pb-8 md:gap-x-16 md:gap-y-8">

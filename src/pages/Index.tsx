@@ -6,7 +6,6 @@ import FeaturedCard from "@/components/FeaturedCard";
 import NewsletterForm from "@/components/NewsletterForm";
 import Button from "@/components/Button";
 import { articles } from "@/data/articles";
-import parisRestaurant from "@/assets/paris-restaurant-bw.jpg";
 import logoLarge from "@/assets/logo-immobiliar-coach-large.png";
 
 const Index = () => {
@@ -25,11 +24,8 @@ const Index = () => {
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
             <img src={logoLarge} alt="Immobiliar Coach" className="mx-auto mb-6 w-48 sm:w-56 md:w-72 lg:w-80 h-auto" />
-            
 
-
-            
-            <p className="text-xl md:text-2xl font-semibold text-foreground mb-4 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl font-extrabold text-brand-navy mb-4 max-w-2xl mx-auto">
               Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
             </p>
 
@@ -42,6 +38,11 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Gold Divider */}
+        <div className="flex justify-center py-4">
+          <div className="w-24 h-1 rounded-full bg-brand-gold" />
+        </div>
+
         {/* Intro Section */}
         <section className="px-5 md:px-20 pb-12 md:pb-16">
           <div className="max-w-3xl mx-auto text-center">
@@ -49,7 +50,7 @@ const Index = () => {
               Comprare casa è una delle decisioni economiche più importanti della vita.
             </p>
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mt-4">
-              <strong>Immobiliar Coach</strong> nasce per aiutare chi compra casa a orientarsi, valutare e decidere nei momenti che contano davvero.
+              <strong className="text-brand-navy">Immobiliar Coach</strong> nasce per aiutare chi compra casa a orientarsi, valutare e decidere nei momenti che contano davvero.
             </p>
           </div>
         </section>
