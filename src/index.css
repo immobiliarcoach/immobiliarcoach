@@ -5,84 +5,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design System - Blu #1D4E89, Bianco #FFFFFF, Oro #BA8D1C */
+/* Design System - Teal #39728b, Nero #0b0b0b, Crema #f7f6f1 */
 
 @layer base {
   :root {
     /* Base Colors */
-    --background: 0 0% 100%; /* Bianco */
-    --foreground: 0 4% 15%; /* #272525 */
+    --background: 50 30% 96%; /* #f7f6f1 crema */
+    --foreground: 0 0% 4%; /* #0b0b0b nero */
 
     /* Card Colors */
-    --card: 0 0% 100%;
-    --card-foreground: 0 4% 15%;
+    --card: 50 30% 96%;
+    --card-foreground: 0 0% 4%;
 
-    /* Primary Action Colors - Oro #BA8D1C */
-    --primary: 43 75% 42%;
+    /* Primary Action Colors - Teal #39728b */
+    --primary: 197 41% 38%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 43 75% 35%;
+    --primary-hover: 197 41% 30%;
 
-    /* Secondary Actions - Blu #1D4E89 */
-    --secondary: 212 64% 33%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 212 64% 26%;
+    /* Secondary Actions - Nero #0b0b0b */
+    --secondary: 0 0% 4%;
+    --secondary-foreground: 50 30% 96%;
+    --secondary-hover: 0 0% 12%;
 
     /* Accent Colors */
-    --accent-red: 212 64% 33%; /* Blu */
-    --accent-pink: 43 75% 42%; /* Oro */
+    --accent-red: 197 41% 38%;
+    --accent-pink: 197 41% 50%;
 
-    /* Card Backgrounds - Oro chiaro */
-    --card-yellow: 43 45% 92%;
-    --card-purple: 43 45% 92%;
-    --card-magenta: 43 45% 92%;
-    --card-blue: 43 45% 92%;
-    --card-coral: 43 45% 92%;
-    --card-mint: 43 45% 92%;
-    --card-orange: 43 45% 92%;
-    --card-lavender: 43 45% 92%;
+    /* Card Backgrounds - Teal chiaro */
+    --card-yellow: 197 20% 92%;
+    --card-purple: 197 20% 92%;
+    --card-magenta: 197 20% 92%;
+    --card-blue: 197 20% 92%;
+    --card-coral: 197 20% 92%;
+    --card-mint: 197 20% 92%;
+    --card-orange: 197 20% 92%;
+    --card-lavender: 197 20% 92%;
 
     /* Dark Mode Colors */
-    --dark-background: 0 4% 15%;
-    --dark-card: 212 30% 15%;
+    --dark-background: 0 0% 4%;
+    --dark-card: 197 30% 15%;
     --dark-muted: 0 0% 35%;
 
     /* Status Colors */
-    --success: 212 64% 33%;
+    --success: 150 40% 40%;
     --warning: 43 75% 42%;
     --error: 0 65% 50%;
-    --info: 212 64% 33%;
+    --info: 197 41% 38%;
 
     /* UI Elements */
-    --border: 0 0% 85%;
-    --input: 0 0% 85%;
-    --ring: 212 64% 33%;
+    --border: 50 10% 85%;
+    --input: 50 10% 85%;
+    --ring: 197 41% 38%;
     --radius: 0.5rem;
 
     /* Transitions */
     --transition-fast: 150ms ease-in-out;
     --transition-medium: 300ms ease-in-out;
     --transition-slow: 500ms cubic-bezier(0.34, 1, 0.64, 1);
-    --popover: 0 0% 98%;
-    --popover-foreground: 0 4% 15%;
+    --popover: 50 20% 97%;
+    --popover-foreground: 0 0% 4%;
     --muted: 0 0% 65%;
     --muted-foreground: 0 0% 40%;
-    --accent: 212 64% 33%;
+    --accent: 197 41% 38%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
-    --chart-1: 212 64% 33%;
-    --chart-2: 43 75% 42%;
+    --chart-1: 197 41% 38%;
+    --chart-2: 197 41% 50%;
     --chart-3: 0 0% 65%;
     --chart-4: 0 0% 50%;
     --chart-5: 0 0% 35%;
-    --sidebar: 0 0% 100%;
-    --sidebar-foreground: 0 4% 15%;
-    --sidebar-primary: 43 75% 42%;
+    --sidebar: 50 30% 96%;
+    --sidebar-foreground: 0 0% 4%;
+    --sidebar-primary: 197 41% 38%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 212 64% 33%;
+    --sidebar-accent: 197 41% 38%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 85%;
-    --sidebar-ring: 212 64% 33%;
+    --sidebar-border: 50 10% 85%;
+    --sidebar-ring: 197 41% 38%;
     --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     --font-heading: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
@@ -98,38 +98,38 @@
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 98%;
-    --border: 0 0% 22%;
-    --input: 0 0% 22%;
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 43 70% 55%;
-    --primary-foreground: 0 0% 8%;
-    --secondary: 215 50% 45%;
-    --secondary-foreground: 0 0% 100%;
+    --background: 0 0% 6%;
+    --foreground: 50 30% 96%;
+    --card: 0 0% 10%;
+    --card-foreground: 50 30% 96%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 50 30% 96%;
+    --primary: 197 41% 50%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 197 30% 25%;
+    --secondary-foreground: 50 30% 96%;
     --muted: 0 0% 35%;
     --muted-foreground: 0 0% 65%;
-    --accent: 215 50% 45%;
+    --accent: 197 41% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 0% 50%;
-    --destructive-foreground: 0 0% 98%;
-    --ring: 43 70% 55%;
-    --chart-1: 215 50% 45%;
-    --chart-2: 43 70% 55%;
+    --destructive-foreground: 50 30% 96%;
+    --ring: 197 41% 50%;
+    --chart-1: 197 41% 50%;
+    --chart-2: 197 41% 38%;
     --chart-3: 0 0% 55%;
     --chart-4: 0 0% 45%;
     --chart-5: 0 0% 35%;
-    --sidebar: 0 0% 12%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 43 70% 55%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 215 50% 45%;
+    --sidebar: 0 0% 10%;
+    --sidebar-foreground: 50 30% 96%;
+    --sidebar-primary: 197 41% 50%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 197 41% 50%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 22%;
-    --sidebar-ring: 43 70% 55%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 197 41% 50%;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
@@ -238,6 +238,20 @@
   @media (max-width: 700px) {
     .article-title {
       font-size: 60px;
+    }
+  }
+
+  /* Hero Outline Effect - Brand Identity */
+  .hero-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px hsl(0 0% 4%);
+    text-stroke: 2px hsl(0 0% 4%);
+  }
+
+  @media (min-width: 768px) {
+    .hero-outline {
+      -webkit-text-stroke: 3px hsl(0 0% 4%);
+      text-stroke: 3px hsl(0 0% 4%);
     }
   }
 }
