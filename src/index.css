@@ -148,11 +148,22 @@
 
   html {
     @apply scroll-smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: "Inter", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Global text overflow protection */
+  h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, label, blockquote {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   h1,
@@ -232,13 +243,8 @@
 
   /* Article Title with Responsive Sizing */
   .article-title {
-    font-size: 120px;
-  }
-
-  @media (max-width: 700px) {
-    .article-title {
-      font-size: 60px;
-    }
+    font-size: clamp(2.25rem, 8vw, 120px);
+    line-height: 0.85;
   }
 
   /* Hero Outline Effect - Brand Identity */
