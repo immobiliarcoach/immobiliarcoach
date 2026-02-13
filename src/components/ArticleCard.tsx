@@ -29,13 +29,13 @@ const ArticleCard = ({
 
         {/* Content */}
         <div className="p-5 md:p-6 flex flex-col flex-1">
-          <time className="text-sm font-medium text-foreground/70 mb-3 block font-sans">
+          <time className="text-sm font-medium text-foreground/50 mb-3 block font-sans">
             {date}
           </time>
-          <h2 className="text-3xl sm:text-4xl md:text-4xl leading-[0.9] mb-3 font-sans font-extrabold tracking-tighter">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl leading-[0.9] mb-3 font-sans font-extrabold tracking-tighter text-brand-navy">
             {title}
           </h2>
-          <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">
+          <p className="text-sm md:text-base leading-relaxed text-foreground/70 mb-4 flex-1 line-clamp-3">
             {excerpt}
           </p>
           <Button variant="filled" className="text-xs py-2 px-5 self-start">

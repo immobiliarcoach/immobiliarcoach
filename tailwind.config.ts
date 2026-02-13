@@ -58,6 +58,10 @@ export default {
   			ring: 'hsl(var(--ring))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+  			brand: {
+  				navy: 'hsl(var(--brand-navy))',
+  				gold: 'hsl(var(--brand-gold))'
+  			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))',
@@ -69,6 +73,7 @@ export default {
   				hover: 'hsl(var(--secondary-hover))'
   			},
   			accent: {
+  				DEFAULT: 'hsl(var(--accent))',
   				red: 'hsl(var(--accent-red))',
   				pink: 'hsl(var(--accent-pink))'
   			},

@@ -27,13 +27,13 @@ const FeaturedCard = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Text Content - Left */}
           <div className="p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
-            <time className="text-sm md:text-base font-medium text-foreground/70 mb-4 block font-sans">
+            <time className="text-sm md:text-base font-medium text-foreground/50 mb-4 block font-sans">
               {date}
             </time>
-            <h2 className="text-3xl sm:text-5xl md:text-7xl leading-[0.9] mb-4 font-sans font-extrabold tracking-tighter">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl leading-[0.9] mb-4 font-sans font-extrabold tracking-tighter text-brand-navy">
               {title}
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6 font-serif">
+            <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-6">
               {excerpt}
             </p>
             <Button variant="filled" className="text-sm py-3 px-6 self-start">
