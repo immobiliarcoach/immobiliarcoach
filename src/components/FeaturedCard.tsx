@@ -30,7 +30,7 @@ const FeaturedCard = ({
             <time className="text-sm md:text-base font-medium text-foreground/70 mb-4 block font-sans">
               {date}
             </time>
-            <h2 className="text-5xl leading-[0.8] md:text-7xl mb-4 font-sans font-extrabold tracking-tighter">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl leading-[0.9] mb-4 font-sans font-extrabold tracking-tighter">
               {title}
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6 font-serif">

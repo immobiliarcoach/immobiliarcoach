@@ -40,10 +40,10 @@ const Article = () => {
         <div className="pt-[30px] pb-[30px] sm-590:pt-[60px] sm-590:pb-[60px]">
           <div className="px-5 sm-590:px-10 max-w-[1300px] mx-auto">
             <div className="list-none p-0 m-0 -ml-[30px]">
-              <div className="float-left pl-[30px] w-full min-h-[1px] relative sm-590:left-[16.66667%] sm-590:w-2/3">
+              <div className="float-left pl-[30px] w-full min-h-[1px] relative sm-590:left-[16.66667%] sm-590:w-2/3 box-border">
                 {/* Article Header */}
                 <header className="mb-[30px] sm-590:mb-[50px]">
-                  <h1 className="text-6xl md:text-[120px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.72] tracking-[-2px] max-[700px]:tracking-[-1px]">
+                  <h1 className="text-4xl sm:text-6xl md:text-[120px] font-extrabold uppercase text-center mb-10 max-[700px]:mb-[30px] leading-[0.85] md:leading-[0.75] tracking-[-1px] md:tracking-[-2px]">
                     {article.title}
                   </h1>
 

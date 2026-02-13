@@ -23,7 +23,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.9] tracking-[-2px] md:tracking-[-3px] uppercase hero-outline">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.95] md:leading-[0.9] tracking-[-1px] md:tracking-[-3px] uppercase hero-outline">
               Immobiliar Coach
             </h1>
             

@@ -32,7 +32,7 @@ const ArticleCard = ({
           <time className="text-sm font-medium text-foreground/70 mb-3 block font-sans">
             {date}
           </time>
-          <h2 className="text-5xl leading-[0.8] mb-3 font-sans font-extrabold tracking-tighter md:text-4xl">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl leading-[0.9] mb-3 font-sans font-extrabold tracking-tighter">
             {title}
           </h2>
           <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">
