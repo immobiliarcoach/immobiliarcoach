@@ -25,9 +25,9 @@ const Index = () => {
         <section className="px-5 md:px-20 pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
             <img src={logoLarge} alt="Immobiliar Coach" className="mx-auto mb-6 w-48 sm:w-56 md:w-72 lg:w-80 h-auto" />
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center mb-6 leading-[0.95] md:leading-[0.9] tracking-[-1px] md:tracking-[-3px] uppercase hero-outline">
-              Immobiliar Coach
-            </h1>
+            
+
+
             
             <p className="text-xl md:text-2xl font-semibold text-foreground mb-4 max-w-2xl mx-auto">
               Aiutiamo chi compra casa a prendere decisioni corrette tramite un metodo strutturato e indipendente
@@ -61,24 +61,24 @@ const Index = () => {
 
         {/* Articles Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-x-5 gap-y-8 md:pt-16 md:px-20 md:pb-8 md:gap-x-16 md:gap-y-8">
-          {articles.slice(1, visibleArticles).map((article) => (
-            <ArticleCard key={article.id} {...article} />
-          ))}
+          {articles.slice(1, visibleArticles).map((article) =>
+          <ArticleCard key={article.id} {...article} />
+          )}
         </section>
 
         {/* Load More */}
-        {visibleArticles < articles.length && (
-          <div className="text-center py-12">
+        {visibleArticles < articles.length &&
+        <div className="text-center py-12">
             <Button onClick={loadMore} variant="transparent">
               CARICA ALTRI
             </Button>
           </div>
-        )}
+        }
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
