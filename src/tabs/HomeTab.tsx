@@ -14,37 +14,83 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
   return (
     <div className="animate-fade-in">
       {/* HERO */}
-      <section className="section-padding text-white text-center" style={{ background: "linear-gradient(135deg, #1d4e89, #15365f)" }}>
-        <img
-          src={logoMCoach}
-          alt="Immobiliar Coach"
-          className="mx-auto mb-8 h-auto"
-          style={{
-            height: "120px",
-            filter: "drop-shadow(0 0 20px rgba(255,255,255,0.3)) drop-shadow(0 0 40px rgba(186,141,28,0.2))",
-          }}
-        />
-        <p className="text-sm uppercase tracking-widest mb-4" style={{ color: "hsl(43 74% 42%)" }}>
-          CONSULENZA INDIPENDENTE PER CHI COMPRA CASA
-        </p>
-        <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4 leading-tight">
-          Stai comprando casa?<br />
-          Hai bisogno di qualcuno che lavori solo per te.
-        </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8">
-          Non vendiamo immobili. Non intermediamo. Non prendiamo provvigioni. Ti guidiamo prima delle decisioni che contano, con un metodo strutturato e indipendente.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
-          <button onClick={() => scrollToSection("problema")} className="btn-primary">
-            Scopri come funziona ↓
-          </button>
-          <button onClick={() => onNavigate("bonus")} className="btn-secondary-white">
-            Ricevi 3 strumenti gratuiti →
-          </button>
+      <section
+        className="text-white text-center px-5 py-16 md:py-20 md:px-10"
+        style={{
+          background: "linear-gradient(135deg, #1d4e89, #15365f)",
+          paddingTop: undefined,
+          paddingBottom: undefined,
+        }}
+      >
+        {/* Mobile-specific compact spacing via style overrides */}
+        <div className="md:hidden" style={{ paddingTop: 16, paddingBottom: 20, paddingLeft: 20, paddingRight: 20 }}>
+          <img
+            src={logoMCoach}
+            alt="Immobiliar Coach"
+            className="mx-auto h-auto"
+            style={{
+              height: "80px",
+              marginTop: 16,
+              marginBottom: 8,
+              filter: "drop-shadow(0 0 20px rgba(255,255,255,0.3)) drop-shadow(0 0 40px rgba(186,141,28,0.2))",
+            }}
+          />
+          <p className="uppercase tracking-widest" style={{ color: "hsl(43 74% 42%)", fontSize: 11, marginBottom: 6 }}>
+            CONSULENZA INDIPENDENTE PER CHI COMPRA CASA
+          </p>
+          <h1 className="font-heading font-bold" style={{ fontSize: 28, lineHeight: 1.15, marginBottom: 10 }}>
+            Stai comprando casa?<br />
+            Hai bisogno di qualcuno che lavori solo per te.
+          </h1>
+          <p className="text-white/80" style={{ fontSize: 14, lineHeight: 1.35, marginBottom: 14 }}>
+            Non vendiamo immobili. Non intermediamo. Non prendiamo provvigioni. Ti guidiamo prima delle decisioni che contano, con un metodo strutturato e indipendente.
+          </p>
+          <div className="flex flex-col items-center gap-3" style={{ marginBottom: 16 }}>
+            <button onClick={() => scrollToSection("problema")} className="btn-primary">
+              Scopri come funziona ↓
+            </button>
+            <button onClick={() => onNavigate("bonus")} className="btn-secondary-white">
+              Ricevi 3 strumenti gratuiti →
+            </button>
+          </div>
+          <p className="text-white/60" style={{ fontSize: 12 }}>
+            Zero impegno. Compila il questionario e ricevi 3 bonus gratis.
+          </p>
         </div>
-        <p className="text-sm text-white/60">
-          Zero impegno. Compila il questionario e ricevi 3 bonus gratis.
-        </p>
+
+        {/* Desktop hero (unchanged) */}
+        <div className="hidden md:block">
+          <img
+            src={logoMCoach}
+            alt="Immobiliar Coach"
+            className="mx-auto mb-8 h-auto"
+            style={{
+              height: "120px",
+              filter: "drop-shadow(0 0 20px rgba(255,255,255,0.3)) drop-shadow(0 0 40px rgba(186,141,28,0.2))",
+            }}
+          />
+          <p className="text-sm uppercase tracking-widest mb-4" style={{ color: "hsl(43 74% 42%)" }}>
+            CONSULENZA INDIPENDENTE PER CHI COMPRA CASA
+          </p>
+          <h1 className="font-heading text-5xl font-bold mb-4 leading-tight">
+            Stai comprando casa?<br />
+            Hai bisogno di qualcuno che lavori solo per te.
+          </h1>
+          <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
+            Non vendiamo immobili. Non intermediamo. Non prendiamo provvigioni. Ti guidiamo prima delle decisioni che contano, con un metodo strutturato e indipendente.
+          </p>
+          <div className="flex flex-row items-center justify-center gap-3 mb-4">
+            <button onClick={() => scrollToSection("problema")} className="btn-primary">
+              Scopri come funziona ↓
+            </button>
+            <button onClick={() => onNavigate("bonus")} className="btn-secondary-white">
+              Ricevi 3 strumenti gratuiti →
+            </button>
+          </div>
+          <p className="text-sm text-white/60">
+            Zero impegno. Compila il questionario e ricevi 3 bonus gratis.
+          </p>
+        </div>
       </section>
 
       {/* IL PROBLEMA */}
