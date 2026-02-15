@@ -10,8 +10,8 @@
 @layer base {
   :root {
     /* Brand Colors */
-    --brand-navy: 216 60% 29%;
-    --brand-gold: 43 50% 55%;
+    --brand-navy: 213 61% 33%;
+    --brand-gold: 43 74% 42%;
 
     /* Base Colors */
     --background: 50 30% 96%; /* #f7f6f1 crema */
@@ -22,28 +22,28 @@
     --card-foreground: 0 0% 4%;
 
     /* Primary Action Colors - Navy */
-    --primary: 216 60% 29%;
+    --primary: 213 61% 33%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 216 60% 22%;
+    --primary-hover: 213 61% 26%;
 
     /* Secondary Actions - Navy dark */
-    --secondary: 216 60% 15%;
+    --secondary: 213 61% 18%;
     --secondary-foreground: 50 30% 96%;
-    --secondary-hover: 216 60% 20%;
+    --secondary-hover: 213 61% 23%;
 
     /* Accent Colors - Gold */
-    --accent-red: 216 60% 29%;
-    --accent-pink: 43 50% 55%;
+    --accent-red: 213 61% 33%;
+    --accent-pink: 43 74% 42%;
 
     /* Card Backgrounds - Navy chiaro */
-    --card-yellow: 216 30% 93%;
-    --card-purple: 216 30% 93%;
-    --card-magenta: 216 30% 93%;
-    --card-blue: 216 30% 93%;
-    --card-coral: 216 30% 93%;
-    --card-mint: 216 30% 93%;
-    --card-orange: 216 30% 93%;
-    --card-lavender: 216 30% 93%;
+    --card-yellow: 213 30% 93%;
+    --card-purple: 213 30% 93%;
+    --card-magenta: 213 30% 93%;
+    --card-blue: 213 30% 93%;
+    --card-coral: 213 30% 93%;
+    --card-mint: 213 30% 93%;
+    --card-orange: 213 30% 93%;
+    --card-lavender: 213 30% 93%;
 
     /* Dark Mode Colors */
     --dark-background: 0 0% 4%;
@@ -52,14 +52,14 @@
 
     /* Status Colors */
     --success: 150 40% 40%;
-    --warning: 43 75% 42%;
+    --warning: 43 74% 42%;
     --error: 0 65% 50%;
-    --info: 216 60% 29%;
+    --info: 213 61% 33%;
 
     /* UI Elements */
     --border: 50 10% 85%;
     --input: 50 10% 85%;
-    --ring: 216 60% 29%;
+    --ring: 213 61% 33%;
     --radius: 0.5rem;
 
     /* Transitions */
@@ -70,23 +70,23 @@
     --popover-foreground: 0 0% 4%;
     --muted: 0 0% 65%;
     --muted-foreground: 0 0% 40%;
-    --accent: 43 50% 55%;
+    --accent: 43 74% 42%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
-    --chart-1: 216 60% 29%;
-    --chart-2: 43 50% 55%;
+    --chart-1: 213 61% 33%;
+    --chart-2: 43 74% 42%;
     --chart-3: 0 0% 65%;
     --chart-4: 0 0% 50%;
     --chart-5: 0 0% 35%;
     --sidebar: 50 30% 96%;
     --sidebar-foreground: 0 0% 4%;
-    --sidebar-primary: 216 60% 29%;
+    --sidebar-primary: 213 61% 33%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 43 50% 55%;
+    --sidebar-accent: 43 74% 42%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 50 10% 85%;
-    --sidebar-ring: 216 60% 29%;
+    --sidebar-ring: 213 61% 33%;
     --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     --font-heading: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
@@ -110,30 +110,30 @@
     --input: 0 0% 20%;
     --popover: 0 0% 10%;
     --popover-foreground: 50 30% 96%;
-    --primary: 216 60% 40%;
+    --primary: 213 61% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 216 30% 25%;
+    --secondary: 213 30% 25%;
     --secondary-foreground: 50 30% 96%;
     --muted: 0 0% 35%;
     --muted-foreground: 0 0% 65%;
-    --accent: 43 50% 55%;
+    --accent: 43 74% 42%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 0% 50%;
     --destructive-foreground: 50 30% 96%;
-    --ring: 216 60% 40%;
-    --chart-1: 216 60% 40%;
-    --chart-2: 43 50% 55%;
+    --ring: 213 61% 40%;
+    --chart-1: 213 61% 40%;
+    --chart-2: 43 74% 42%;
     --chart-3: 0 0% 55%;
     --chart-4: 0 0% 45%;
     --chart-5: 0 0% 35%;
     --sidebar: 0 0% 10%;
     --sidebar-foreground: 50 30% 96%;
-    --sidebar-primary: 216 60% 40%;
+    --sidebar-primary: 213 61% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 43 50% 55%;
+    --sidebar-accent: 43 74% 42%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 216 60% 40%;
+    --sidebar-ring: 213 61% 40%;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
