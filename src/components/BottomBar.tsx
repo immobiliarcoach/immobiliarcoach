@@ -26,23 +26,23 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border"
-         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)", height: 60 }}>
-      <div className="flex items-center justify-around h-full max-w-lg mx-auto">
+         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)", height: 120 }}>
+      <div className="flex items-center justify-around h-full max-w-lg mx-auto" style={{ padding: "16px 0" }}>
         {tabs.map((tab) => {
           const isActive = tab.id !== "quiz" && activeTab === tab.id;
           return (
             <button
               key={tab.id}
               onClick={() => handleClick(tab.id)}
-              className="flex flex-col items-center justify-center gap-0.5 flex-1 h-full transition-colors"
+              className="flex flex-col items-center justify-center flex-1 h-full transition-colors"
             >
               <tab.icon
-                className="w-5 h-5"
+                className="w-7 h-7"
                 style={{ color: isActive ? "hsl(43 74% 42%)" : "#666" }}
                 fill={isActive ? "hsl(43 74% 42%)" : "none"}
               />
               <span
-                className="text-[11px] font-medium"
+                className="text-[13px] font-medium mt-2"
                 style={{ color: isActive ? "hsl(43 74% 42%)" : "#666", fontFamily: "var(--font-body)" }}
               >
                 {tab.label}

@@ -18,7 +18,11 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
         <img
           src={logoMCoach}
           alt="Immobiliar Coach"
-          className="mx-auto mb-6 w-40 md:w-56 h-auto drop-shadow-[0_0_40px_rgba(186,141,28,0.4)]"
+          className="mx-auto mb-8 h-auto"
+          style={{
+            height: "120px",
+            filter: "drop-shadow(0 0 20px rgba(255,255,255,0.3)) drop-shadow(0 0 40px rgba(186,141,28,0.2))",
+          }}
         />
         <p className="text-sm uppercase tracking-widest mb-4" style={{ color: "hsl(43 74% 42%)" }}>
           CONSULENZA INDIPENDENTE PER CHI COMPRA CASA
