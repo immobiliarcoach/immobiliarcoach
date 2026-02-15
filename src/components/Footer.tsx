@@ -1,71 +1,20 @@
-import NewsletterForm from "./NewsletterForm";
 import logoImg from "@/assets/logo-immobiliar-coach.png";
 
 const Footer = () => {
-  const helpLinks = [{ label: "CONTATTACI", href: "mailto:info@immobiliarcoach.it" }];
-
-  const socialLinks = [
-    { label: "INSTAGRAM", href: "https://instagram.com" },
-    { label: "LINKEDIN", href: "https://linkedin.com" },
-  ];
-
   return (
-    <footer className="bg-brand-navy text-white">
-      <div className="px-5 md:px-20 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
-          {/* Logo Section */}
-          <div className="md:col-span-1">
-          <div className="bg-white p-3 rounded-lg inline-block">
-            <img 
-              src={logoImg} 
-              alt="Immobiliar Coach" 
-              className="h-12 md:h-16 w-auto"
-            />
-          </div>
-          </div>
-
-          {/* Connect */}
-          <div className="md:col-span-1">
-            <h3 className="uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-brand-gold mb-3 md:mb-4">CONNECT</h3>
-            <nav className="flex flex-col gap-2">
-              {helpLinks.map((link) => (
-                <a key={link.label} href={link.href} className="underline decoration-2 text-sm md:text-base text-white/90 hover:text-brand-gold transition-colors duration-200">
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          {/* Social */}
-          <div className="md:col-span-1">
-            <h3 className="uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-brand-gold mb-3 md:mb-4">FOLLOW</h3>
-            <nav className="flex flex-col gap-2">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-2 text-sm md:text-base text-white/90 hover:text-brand-gold transition-colors duration-200"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          {/* Newsletter */}
-          <div id="newsletter" className="md:col-span-1">
-            <NewsletterForm buttonClassName="border-white text-white hover:bg-brand-gold hover:border-brand-gold hover:text-brand-navy" />
+    <footer className="bg-[#111] text-white py-10 px-5 md:px-10">
+      <div className="max-w-4xl mx-auto text-center space-y-4">
+        <div className="flex items-center justify-center gap-3">
+          <div className="bg-white p-2 rounded-lg">
+            <img src={logoImg} alt="Immobiliar Coach" className="h-8 w-auto" />
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="mt-12 pt-6 border-t border-white/20">
-          <p className="text-sm text-center md:text-left uppercase text-white/60">
-            © 2026 IMMOBILIAR COACH. TUTTI I DIRITTI RISERVATI.
-          </p>
-        </div>
+        <p className="text-sm text-gray-400">
+          Consulenza indipendente per chi compra casa
+        </p>
+        <p className="text-xs text-gray-500 max-w-md mx-auto">
+          Immobiliar Coach non è un'agenzia immobiliare. Non media, non vende immobili, non percepisce provvigioni.
+        </p>
       </div>
     </footer>
   );
