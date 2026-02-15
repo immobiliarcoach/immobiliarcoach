@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import DOMPurify from "dompurify";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
@@ -86,7 +87,7 @@ const Article = () => {
                                prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-6
                                prose-p:text-lg md:prose-p:text-xl prose-p:leading-[1.75] prose-p:mb-6
                                prose-img:rounded-2xl prose-img:my-8"
-                    dangerouslySetInnerHTML={{ __html: article.content }}
+                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(article.content) }}
                   />
                 ) : (
                   <div className="space-y-6 font-serif">
