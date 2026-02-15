@@ -1,51 +1,36 @@
+import { useState, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { RouterProvider, createBrowserRouter, ScrollRestoration, Outlet } from "react-router-dom";
-import Index from "./pages/Index";
-import Article from "./pages/Article";
-import NotFound from "./pages/NotFound";
+import BottomBar, { type TabName } from "@/components/BottomBar";
+import Footer from "@/components/Footer";
+import HomeTab from "@/tabs/HomeTab";
+import BonusTab from "@/tabs/BonusTab";
+import ConsulenzeTab from "@/tabs/ConsulenzeTab";
+import PrenotaTab from "@/tabs/PrenotaTab";
 
-const queryClient = new QueryClient();
+const App = () => {
+  const [activeTab, setActiveTab] = useState<TabName>("home");
 
-// Layout component with scroll restoration
-const Layout = () => (
-  <>
-    <ScrollRestoration />
-    <Outlet />
-  </>
-);
+  const handleTabChange = (tab: TabName) => {
+    setActiveTab(tab);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-// Create router with automatic scroll restoration
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Index />,
-      },
-      {
-        path: "/article/:slug",
-        element: <Article />,
-      },
-      {
-        path: "*",
-        element: <NotFound />,
-      },
-    ],
-  },
-]);
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+  return (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <RouterProvider router={router} />
+      <div className="min-h-screen bg-background pb-20">
+        {activeTab === "home" && <HomeTab onNavigate={handleTabChange} />}
+        {activeTab === "bonus" && <BonusTab />}
+        {activeTab === "consulenze" && <ConsulenzeTab onNavigate={handleTabChange} />}
+        {activeTab === "prenota" && <PrenotaTab />}
+        <Footer />
+        <BottomBar activeTab={activeTab} onTabChange={handleTabChange} />
+      </div>
     </TooltipProvider>
-  </QueryClientProvider>
-);
+  );
+};
 
 export default App;
