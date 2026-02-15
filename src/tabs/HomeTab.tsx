@@ -1,5 +1,6 @@
 import { Shield, Ruler, Zap, Check } from "lucide-react";
 import type { TabName } from "@/components/BottomBar";
+import logoMCoach from "@/assets/logo-m-coach.png";
 
 interface HomeTabProps {
   onNavigate: (tab: TabName) => void;
@@ -14,6 +15,11 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
     <div className="animate-fade-in">
       {/* HERO */}
       <section className="section-padding text-white text-center" style={{ background: "linear-gradient(135deg, #1d4e89, #15365f)" }}>
+        <img
+          src={logoMCoach}
+          alt="Immobiliar Coach"
+          className="mx-auto mb-6 w-40 md:w-56 h-auto drop-shadow-[0_0_40px_rgba(186,141,28,0.4)]"
+        />
         <p className="text-sm uppercase tracking-widest mb-4" style={{ color: "hsl(43 74% 42%)" }}>
           CONSULENZA INDIPENDENTE PER CHI COMPRA CASA
         </p>
