@@ -18,7 +18,7 @@ const tabs: { id: TabName | "quiz"; icon: typeof Home; label: string }[] = [
 const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
   const handleClick = (id: TabName | "quiz") => {
     if (id === "quiz") {
-      window.open("https://immobiliarcoach.com/quiz", "_blank", "noopener,noreferrer");
+      window.open("https://immobiliarcoachquiz5.lovable.app/", "_blank", "noopener,noreferrer");
       return;
     }
     onTabChange(id);
