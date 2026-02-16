@@ -26,7 +26,7 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border"
-         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)", height: 120 }}>
+         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)", height: 120, paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
       <div className="flex items-center justify-around h-full max-w-lg mx-auto" style={{ padding: "16px 0" }}>
         {tabs.map((tab) => {
           const isActive = tab.id !== "quiz" && activeTab === tab.id;
