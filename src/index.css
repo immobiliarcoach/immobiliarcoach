@@ -53,6 +53,7 @@
   html {
     @apply scroll-smooth;
     overflow-x: hidden;
+    height: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
@@ -61,8 +62,10 @@
     font-family: var(--font-body);
     font-size: 16px;
     overflow-x: hidden;
+    min-height: 100%;
     /* Prevent iOS overscroll bounce creating phantom space */
     overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
   }
 
   h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, label, blockquote {
