@@ -21,14 +21,14 @@ const App = () => {
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <div className="bg-background" style={{ minHeight: '100dvh', paddingBottom: 'calc(120px + env(safe-area-inset-bottom, 0px))' }}>
+      <main className="bg-background" style={{ paddingBottom: 'calc(120px + env(safe-area-inset-bottom, 0px))' }}>
         {activeTab === "home" && <HomeTab onNavigate={handleTabChange} />}
         {activeTab === "bonus" && <BonusTab />}
         {activeTab === "consulenze" && <ConsulenzeTab onNavigate={handleTabChange} />}
         {activeTab === "prenota" && <PrenotaTab />}
         <Footer />
-        <BottomBar activeTab={activeTab} onTabChange={handleTabChange} />
-      </div>
+      </main>
+      <BottomBar activeTab={activeTab} onTabChange={handleTabChange} />
     </TooltipProvider>
   );
 };
