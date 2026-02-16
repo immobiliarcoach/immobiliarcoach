@@ -21,7 +21,7 @@ const App = () => {
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-[#111]">
         {activeTab === "home" && <HomeTab onNavigate={handleTabChange} />}
         {activeTab === "bonus" && <BonusTab />}
         {activeTab === "consulenze" && <ConsulenzeTab onNavigate={handleTabChange} />}
