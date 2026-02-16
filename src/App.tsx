@@ -21,7 +21,7 @@ const App = () => {
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <main className="bg-background" style={{ paddingBottom: 'calc(120px + env(safe-area-inset-bottom, 0px))' }}>
+      <main className="bg-background" style={{ paddingBottom: 'calc(88px + env(safe-area-inset-bottom, 0px))' }}>
         {activeTab === "home" && <HomeTab onNavigate={handleTabChange} />}
         {activeTab === "bonus" && <BonusTab />}
         {activeTab === "consulenze" && <ConsulenzeTab onNavigate={handleTabChange} />}
