@@ -1,3 +1,4 @@
+import { createPortal } from "react-dom";
 import { Home, Gift, ClipboardList, Calendar, HelpCircle } from "lucide-react";
 
 export type TabName = "home" | "bonus" | "consulenze" | "prenota";
@@ -24,12 +25,13 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
     onTabChange(id);
   };
 
-  return (
+  return createPortal(
     <nav
       className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-border"
       style={{
         boxShadow: "0 -2px 10px rgba(0,0,0,0.1)",
         paddingBottom: 'env(safe-area-inset-bottom, 0px)',
+        WebkitTransform: 'translateZ(0)',
       }}
     >
       <div
@@ -59,7 +61,8 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
           );
         })}
       </div>
-    </nav>
+    </nav>,
+    document.body
   );
 };
 
