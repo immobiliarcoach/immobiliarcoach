@@ -2,7 +2,10 @@ import logoMCoach from "@/assets/logo-m-coach.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111] text-white py-10 px-5 md:px-10">
+    <footer
+      className="bg-[#111] text-white px-5 md:px-10"
+      style={{ paddingTop: 40, paddingBottom: 'calc(100px + env(safe-area-inset-bottom, 0px))' }}
+    >
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <div className="flex items-center justify-center">
           <img src={logoMCoach} alt="Immobiliar Coach" className="h-16 w-auto" />
