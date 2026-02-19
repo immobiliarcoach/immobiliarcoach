@@ -32,6 +32,7 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
         boxShadow: "0 -2px 10px rgba(0,0,0,0.1)",
         paddingBottom: 'env(safe-area-inset-bottom, 0px)',
         WebkitTransform: 'translateZ(0)',
+        touchAction: 'none', // prevent nav from capturing scroll-direction touches
       }}
     >
       <div
