@@ -53,7 +53,6 @@
   html {
     @apply scroll-smooth;
     overflow-x: hidden;
-    height: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
@@ -62,10 +61,12 @@
     font-family: var(--font-body);
     font-size: 16px;
     overflow-x: hidden;
+    overflow-y: auto;
     min-height: 100%;
-    /* Prevent iOS overscroll bounce creating phantom space */
     overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
+    /* Ensure body never clips scroll */
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, label, blockquote {
@@ -88,6 +89,7 @@
     background: hsl(var(--brand-gold));
     color: white;
     font-family: var(--font-body);
+    min-height: 48px;
   }
   .btn-primary:hover {
     background: hsl(43 74% 35%);
@@ -99,6 +101,7 @@
     border-color: hsl(var(--brand-navy));
     color: hsl(var(--brand-navy));
     font-family: var(--font-body);
+    min-height: 48px;
   }
   .btn-secondary:hover {
     background: hsl(var(--brand-navy));
@@ -111,6 +114,7 @@
     border-color: white;
     color: white;
     font-family: var(--font-body);
+    min-height: 48px;
   }
   .btn-secondary-white:hover {
     background: white;

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer
       className="bg-[#111] text-white px-5 md:px-10"
-      style={{ paddingTop: 40, paddingBottom: 'calc(100px + env(safe-area-inset-bottom, 0px))' }}
+      style={{ paddingTop: 40, paddingBottom: 40 }}
     >
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <div className="flex items-center justify-center">

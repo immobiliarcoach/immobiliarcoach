@@ -151,10 +151,10 @@ const ConsulenzeTab = ({ onNavigate }: ConsulenzeTabProps) => {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <button onClick={() => onNavigate("bonus")} className="btn-primary">
+            <button onClick={() => onNavigate("bonus")} className="btn-primary w-full sm:w-auto" style={{ minHeight: 48 }}>
               Ricevi 3 strumenti gratuiti →
             </button>
-            <button onClick={() => onNavigate("prenota")} className="btn-secondary">
+            <button onClick={() => onNavigate("prenota")} className="btn-secondary w-full sm:w-auto" style={{ minHeight: 48 }}>
               Prenota una call gratuita →
             </button>
           </div>

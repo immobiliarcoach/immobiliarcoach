@@ -68,6 +68,7 @@ const BonusTab = () => {
           onClick={() => setState("confirmation")}
           disabled={!contactData.nome || !contactData.email || !contactData.telefono}
           className="btn-primary w-full disabled:opacity-50"
+          style={{ minHeight: 48 }}
         >
           Invia e ricevi i bonus →
         </button>
@@ -208,7 +209,7 @@ const BonusTab = () => {
         ))}
       </div>
 
-      <button onClick={() => setState("questionnaire")} className="btn-primary w-full">
+      <button onClick={() => setState("questionnaire")} className="btn-primary w-full" style={{ minHeight: 48 }}>
         Compila il Questionario e ricevi i 3 bonus →
       </button>
     </div>

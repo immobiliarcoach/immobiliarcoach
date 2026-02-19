@@ -37,7 +37,8 @@ const PrenotaTab = () => {
             href="https://calendly.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-lg py-4 px-10 inline-flex"
+            className="btn-primary text-base md:text-lg py-4 px-8 inline-flex w-full sm:w-auto justify-center"
+            style={{ minHeight: 48 }}
           >
             Prenota la tua call gratuita →
           </a>
