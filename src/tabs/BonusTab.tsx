@@ -3,7 +3,7 @@ import { BookOpen, CheckSquare, MessageSquare, CheckCircle, ArrowLeft, ArrowRigh
 
 type BonusState = "intro" | "questionnaire" | "contact" | "confirmation";
 
-const TOTAL_SECTIONS = 7;
+const TOTAL_SECTIONS = 4;
 
 const BonusTab = () => {
   const [state, setState] = useState<BonusState>("intro");
@@ -94,72 +94,47 @@ const BonusTab = () => {
           <div className="space-y-5">
             <h3 className="font-heading text-xl font-bold text-brand-navy">Contesto e Motivazione</h3>
             <p className="text-sm text-foreground/60 mb-4">Questo questionario serve a capire la tua situazione e a prepararti al meglio. Le risposte vengono usate esclusivamente per lavorare in modo mirato.</p>
-            <Field label="Perché stai pensando di acquistare casa proprio in questo momento?" type="textarea" id="q1" value={formData.q1} onChange={updateField} />
-            <RadioField label="Da quanto tempo stai valutando l'idea?" id="q2" options={["Meno di 3 mesi", "3-6 mesi", "Oltre 6 mesi"]} value={formData.q2} onChange={updateField} />
+            <Field label="Perché stai pensando di acquistare casa proprio in questo momento? (opzionale, sii più dettagliato possibile)" type="textarea" id="q1" value={formData.q1} onChange={updateField} />
+            <RadioField label="Da quanto tempo stai valutando l'idea?" id="q2" options={["Meno di 3 mesi", "3-6 mesi", "6-12 mesi", "Oltre 12 mesi"]} value={formData.q2} onChange={updateField} />
             <RadioField label="Stai acquistando:" id="q3" options={["Da solo/a", "In coppia", "Con supporto familiare"]} value={formData.q3} onChange={updateField} />
-            <Field label="Qual è la tua principale preoccupazione legata all'acquisto?" type="textarea" id="q4" value={formData.q4} onChange={updateField} />
-            <Field label="Qual è l'errore che non vuoi assolutamente commettere?" type="textarea" id="q5" value={formData.q5} onChange={updateField} />
+            <Field label="Qual è la tua principale preoccupazione legata all'acquisto? (opzionale, sii più dettagliato possibile)" type="textarea" id="q4" value={formData.q4} onChange={updateField} />
+            <Field label="Qual è l'errore che non vuoi assolutamente commettere? (opzionale, sii più dettagliato possibile)" type="textarea" id="q5" value={formData.q5} onChange={updateField} />
           </div>
         )}
 
         {section === 2 && (
           <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">Stato della Ricerca</h3>
+            <h3 className="font-heading text-xl font-bold text-brand-navy">Ricerca e Immobile</h3>
             <RadioField label="In che fase ti trovi oggi?" id="q6" options={["Non ho ancora iniziato", "Sto guardando annunci", "Sto facendo visite", "Ho già un immobile che mi interessa"]} value={formData.q6} onChange={updateField} />
-            <Field label="Quante case hai già visitato (circa)?" type="number" id="q7" value={formData.q7} onChange={updateField} />
-            <Field label="Cosa ti sta bloccando di più in questo momento?" type="textarea" id="q8" value={formData.q8} onChange={updateField} />
+            <div>
+              <label className="block text-sm font-medium mb-1">Quante case hai già visitato (circa)?</label>
+              <input type="number" min="0" value={formData.q7 || ""} onChange={(e) => { const v = Math.max(0, Number(e.target.value)); updateField("q7", String(v)); }}
+                className="w-full border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy" />
+            </div>
+            <Field label="Cosa ti sta bloccando di più in questo momento? (opzionale, sii breve)" type="textarea" id="q8" value={formData.q8} onChange={updateField} />
             <RadioField label="Hai già avuto a che fare con agenzie immobiliari?" id="q9" options={["Sì", "No"]} value={formData.q9} onChange={updateField} />
-            <Field label="Se sì: com'è stata l'esperienza finora?" type="textarea" id="q10" value={formData.q10} onChange={updateField} />
+            <Field label="Che tipo di casa stai cercando? (tipologia, zona, metratura indicativa)" type="textarea" id="q11" value={formData.q11} onChange={updateField} />
+            <Field label="Ci sono caratteristiche non negoziabili?" type="textarea" id="q12" value={formData.q12} onChange={updateField} />
           </div>
         )}
 
         {section === 3 && (
           <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">L'Immobile</h3>
-            <Field label="Che tipo di casa stai cercando? (tipologia, zona, metratura indicativa)" type="textarea" id="q11" value={formData.q11} onChange={updateField} />
-            <Field label="Ci sono caratteristiche non negoziabili?" type="textarea" id="q12" value={formData.q12} onChange={updateField} />
-            <Field label="Su cosa saresti disposto a scendere a compromessi?" type="textarea" id="q13" value={formData.q13} onChange={updateField} />
+            <h3 className="font-heading text-xl font-bold text-brand-navy">Situazione Economica e Mutuo</h3>
+            <p className="text-sm italic text-foreground/50">Non è una valutazione bancaria. Serve solo a impostare una strategia realistica.</p>
+            <RadioField label="Reddito netto mensile complessivo:" id="q14" options={["Meno di €2.500", "Più di €2.500", "Oltre €5.000"]} value={formData.q14} onChange={updateField} />
+            <RadioField label="Hai finanziamenti o rate in corso?" id="q15" options={["Sì", "No"]} value={formData.q15} onChange={updateField} />
+            <RadioField label="Risparmi disponibili:" id="q16" options={["Meno di €50.000", "Tra €50.000 e €100.000", "Sopra i €100.000", "Compro senza mutuo"]} value={formData.q16} onChange={updateField} />
+            <RadioField label="Supporto economico familiare previsto?" id="q17" options={["Sì", "No"]} value={formData.q17} onChange={updateField} />
+            <RadioField label="Hai già parlato con una banca o consulente mutui?" id="q18" options={["Sì", "No"]} value={formData.q18} onChange={updateField} />
+            <Field label="Rata mensile che vorresti sostenere?" type="text" id="q19" value={formData.q19} onChange={updateField} />
           </div>
         )}
 
         {section === 4 && (
           <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">Situazione Economica</h3>
-            <p className="text-sm italic text-foreground/50">Non è una valutazione bancaria. Serve solo a impostare una strategia realistica.</p>
-            <RadioField label="Reddito netto mensile complessivo:" id="q14" options={["Meno di €1.500", "€1.500-2.500", "€2.500-3.500", "Oltre €3.500"]} value={formData.q14} onChange={updateField} />
-            <RadioField label="Hai finanziamenti o rate in corso?" id="q15" options={["Sì", "No"]} value={formData.q15} onChange={updateField} />
-            <RadioField label="Risparmi disponibili:" id="q16" options={["Meno di €10.000", "€10.000-30.000", "€30.000-60.000", "Oltre €60.000"]} value={formData.q16} onChange={updateField} />
-            <RadioField label="Supporto economico familiare previsto?" id="q17" options={["Sì", "No"]} value={formData.q17} onChange={updateField} />
-          </div>
-        )}
-
-        {section === 5 && (
-          <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">Mutuo</h3>
-            <RadioField label="Hai già parlato con una banca o consulente mutui?" id="q18" options={["Sì", "No"]} value={formData.q18} onChange={updateField} />
-            <Field label="Rata mensile che vorresti sostenere?" type="text" id="q19" value={formData.q19} onChange={updateField} />
-            <Field label="Cosa ti preoccupa di più del mutuo?" type="textarea" id="q20" value={formData.q20} onChange={updateField} />
-          </div>
-        )}
-
-        {section === 6 && (
-          <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">Decisione e Serietà</h3>
-            <div>
-              <label className="block text-sm font-medium mb-2">Da 1 a 10, quanto è importante comprare casa bene e non "tanto per"?</label>
-              <input type="range" min="1" max="10" value={formData.q21 || "5"} onChange={(e) => updateField("q21", e.target.value)}
-                className="w-full accent-brand-gold" />
-              <div className="flex justify-between text-xs text-foreground/50"><span>1</span><span>{formData.q21 || "5"}</span><span>10</span></div>
-            </div>
-            <Field label="Se non risolvi questa situazione nei prossimi mesi, cosa succede?" type="textarea" id="q22" value={formData.q22} onChange={updateField} />
+            <h3 className="font-heading text-xl font-bold text-brand-navy">Aspettative</h3>
             <Field label="Cosa ti aspetti concretamente da questo percorso?" type="textarea" id="q23" value={formData.q23} onChange={updateField} />
-          </div>
-        )}
-
-        {section === 7 && (
-          <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-brand-navy">Allineamento</h3>
-            <RadioField label="Sei disposto a fermarti o cambiare strategia se capiamo che non è il momento giusto?" id="q24" options={["Sì", "No"]} value={formData.q24} onChange={updateField} />
           </div>
         )}
 
