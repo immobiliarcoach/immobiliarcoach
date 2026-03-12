@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import { Home, Gift, ClipboardList, Calendar, HelpCircle } from "lucide-react";
+import { Home, BookOpen, ClipboardList, Calendar } from "lucide-react";
 
 export type TabName = "home" | "bonus" | "consulenze" | "prenota";
 
@@ -8,20 +8,15 @@ interface BottomBarProps {
   onTabChange: (tab: TabName) => void;
 }
 
-const tabs: { id: TabName | "quiz"; icon: typeof Home; label: string }[] = [
+const tabs: { id: TabName; icon: typeof Home; label: string }[] = [
   { id: "home", icon: Home, label: "Home" },
-  { id: "bonus", icon: Gift, label: "Bonus" },
+  { id: "bonus", icon: BookOpen, label: "Libro" },
   { id: "consulenze", icon: ClipboardList, label: "Consulenze" },
   { id: "prenota", icon: Calendar, label: "Prenota" },
-  { id: "quiz", icon: HelpCircle, label: "Quiz" },
 ];
 
 const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
-  const handleClick = (id: TabName | "quiz") => {
-    if (id === "quiz") {
-      window.open("https://immobiliarcoachquiz5.lovable.app/", "_blank", "noopener,noreferrer");
-      return;
-    }
+  const handleClick = (id: TabName) => {
     onTabChange(id);
   };
 

@@ -116,8 +116,11 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
               { n: "05", title: "Rogito", badge: "call", text: "L'ultimo passo. Verifichiamo che tutto sia in ordine prima della firma dal notaio. Nessuna sorpresa." },
             ].map((step) => (
               <div key={step.n} className="bg-white rounded-xl p-6 border border-border">
-                <span className="font-heading text-5xl font-bold" style={{ color: "hsl(43 74% 42%)" }}>{step.n}</span>
-                <h3 className="font-heading text-lg font-bold text-foreground mt-2 mb-2">{step.title}</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="font-heading text-5xl font-bold" style={{ color: "hsl(43 74% 42%)" }}>{step.n}</span>
+                  <span className="text-xs uppercase tracking-wide px-2 py-0.5 rounded-full bg-brand-navy/10 text-brand-navy font-medium">{step.badge}</span>
+                </div>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2">{step.title}</h3>
                 <p className="text-foreground/60 text-sm">{step.text}</p>
               </div>
             ))}
