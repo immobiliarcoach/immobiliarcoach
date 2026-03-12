@@ -35,7 +35,7 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
         style={{ height: 88, padding: "12px 0" }}
       >
         {tabs.map((tab) => {
-          const isActive = tab.id !== "quiz" && activeTab === tab.id;
+          const isActive = activeTab === tab.id;
           return (
             <button
               key={tab.id}
