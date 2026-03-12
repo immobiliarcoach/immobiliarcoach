@@ -227,7 +227,7 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
           </button>
         </div>
         <p className="text-sm text-white/60">
-          Compila il questionario. Ricevi 3 strumenti gratuiti nella tua email.
+          Scarica il libro gratuito. Nessun impegno.
         </p>
       </section>
     </div>
