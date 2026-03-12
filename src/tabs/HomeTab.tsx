@@ -43,11 +43,11 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
               Scopri come funziona ↓
             </button>
             <button onClick={() => onNavigate("bonus")} className="btn-secondary-white w-full sm:w-auto" style={{ minHeight: 48 }}>
-              Ricevi 3 strumenti gratuiti →
+              Scarica il libro gratis →
             </button>
           </div>
           <p className="text-white/60 text-xs md:text-sm">
-            Zero impegno. Compila il questionario e ricevi 3 bonus gratis.
+            Scarica il libro gratuito. Nessun impegno.
           </p>
         </div>
       </section>
@@ -101,23 +101,26 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
         <div className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-widest mb-2" style={{ color: "hsl(43 74% 42%)" }}>IL METODO</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-navy mb-2">
-            6 fasi. Dalla ricerca al rogito.
+            6 fasi. Dalla consulenza iniziale al rogito.
           </h2>
           <p className="text-foreground/70 mb-8 max-w-2xl">
             Ogni fase ha i suoi rischi. Ogni fase ha i suoi strumenti. In ognuna, hai qualcuno dalla tua parte.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { n: "01", title: "Ricerca", text: "Cercare senza criteri produce stanchezza, non scelte. Chi cerca senza metodo si stanca. Chi cerca con metodo seleziona." },
-              { n: "02", title: "Visita", text: "Visitare senza metodo genera entusiasmo cieco o dubbi infiniti. Servono checklist, domande preparate, e una decisione presa a freddo." },
-              { n: "03", title: "Proposta", text: "Una proposta mal scritta ti vincola senza proteggerti. Il prezzo non è un numero dato: è una costruzione basata su dati, non su emozioni." },
-              { n: "04", title: "Documenti", text: "Quello che non verifichi prima, lo scopri troppo tardi. Planimetria, visure, provenienza, conformità urbanistica: tutto va chiuso prima di firmare." },
-              { n: "05", title: "Preliminare", text: "Firmare il preliminare è un impegno economico reale. È un contratto vincolante. Devi sapere cosa rischi, cosa puoi negoziare e cosa non accettare." },
-              { n: "06", title: "Mutuo e Pre-Rogito", text: "La banca lavora per sé. Tu devi sapere cosa chiedere, cosa confrontare, e cosa verificare prima della firma definitiva." },
+              { n: "00", title: "Consulenza Start + Ricerca", badge: "videocall", text: "Si parte da qui. Analizziamo la tua situazione, definiamo i criteri di ricerca e impostiamo il metodo. Cercare senza strategia produce stanchezza, non scelte." },
+              { n: "01", title: "Visita", badge: "videocall", text: "Visitare senza metodo genera entusiasmo cieco o dubbi infiniti. Servono checklist, domande preparate, e una decisione presa a freddo." },
+              { n: "02", title: "Proposta", badge: "videocall", text: "Una proposta mal scritta ti vincola senza proteggerti. Il prezzo non è un numero dato: è una costruzione basata su dati, non su emozioni." },
+              { n: "03", title: "Documenti + Preliminare", badge: "videocall", text: "Quello che non verifichi prima, lo scopri troppo tardi. Planimetria, visure, conformità urbanistica, preliminare: tutto va chiuso prima di firmare." },
+              { n: "04", title: "Mutuo + Perizia", badge: "videocall", text: "La banca lavora per sé. Tu devi sapere cosa chiedere, cosa confrontare, e cosa verificare prima della firma definitiva." },
+              { n: "05", title: "Rogito", badge: "call", text: "L'ultimo passo. Verifichiamo che tutto sia in ordine prima della firma dal notaio. Nessuna sorpresa." },
             ].map((step) => (
               <div key={step.n} className="bg-white rounded-xl p-6 border border-border">
-                <span className="font-heading text-5xl font-bold" style={{ color: "hsl(43 74% 42%)" }}>{step.n}</span>
-                <h3 className="font-heading text-lg font-bold text-foreground mt-2 mb-2">{step.title}</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="font-heading text-5xl font-bold" style={{ color: "hsl(43 74% 42%)" }}>{step.n}</span>
+                  <span className="text-xs uppercase tracking-wide px-2 py-0.5 rounded-full bg-brand-navy/10 text-brand-navy font-medium">{step.badge}</span>
+                </div>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2">{step.title}</h3>
                 <p className="text-foreground/60 text-sm">{step.text}</p>
               </div>
             ))}
@@ -217,14 +220,14 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
         </h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
           <button onClick={() => onNavigate("bonus")} className="btn-primary w-full sm:w-auto" style={{ minHeight: 48 }}>
-            Compila il Questionario e ricevi 3 bonus →
+            Scarica il libro gratis →
           </button>
           <button onClick={() => onNavigate("consulenze")} className="btn-secondary-white w-full sm:w-auto" style={{ minHeight: 48 }}>
             Scopri le consulenze →
           </button>
         </div>
         <p className="text-sm text-white/60">
-          Compila il questionario. Ricevi 3 strumenti gratuiti nella tua email.
+          Scarica il libro gratuito. Nessun impegno.
         </p>
       </section>
     </div>
