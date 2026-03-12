@@ -101,7 +101,7 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
         <div className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-widest mb-2" style={{ color: "hsl(43 74% 42%)" }}>IL METODO</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-navy mb-2">
-            6 fasi. Dalla ricerca al rogito.
+            6 fasi. Dalla consulenza iniziale al rogito.
           </h2>
           <p className="text-foreground/70 mb-8 max-w-2xl">
             Ogni fase ha i suoi rischi. Ogni fase ha i suoi strumenti. In ognuna, hai qualcuno dalla tua parte.
