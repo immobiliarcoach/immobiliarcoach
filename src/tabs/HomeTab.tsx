@@ -220,7 +220,7 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
         </h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
           <button onClick={() => onNavigate("bonus")} className="btn-primary w-full sm:w-auto" style={{ minHeight: 48 }}>
-            Compila il Questionario e ricevi 3 bonus →
+            Scarica il libro gratis →
           </button>
           <button onClick={() => onNavigate("consulenze")} className="btn-secondary-white w-full sm:w-auto" style={{ minHeight: 48 }}>
             Scopri le consulenze →
