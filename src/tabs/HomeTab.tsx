@@ -47,7 +47,7 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
             </button>
           </div>
           <p className="text-white/60 text-xs md:text-sm">
-            Zero impegno. Compila il questionario e ricevi 3 bonus gratis.
+            Scarica il libro gratuito. Nessun impegno.
           </p>
         </div>
       </section>
