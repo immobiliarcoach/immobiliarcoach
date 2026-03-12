@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import { Home, BookOpen, ClipboardList, Calendar } from "lucide-react";
+import { Home, BookOpen, ClipboardList, Calendar, HelpCircle } from "lucide-react";
 
 export type TabName = "home" | "bonus" | "consulenze" | "prenota";
 
@@ -8,16 +8,29 @@ interface BottomBarProps {
   onTabChange: (tab: TabName) => void;
 }
 
-const tabs: { id: TabName; icon: typeof Home; label: string }[] = [
+interface TabItem {
+  id: TabName | "quiz";
+  icon: typeof Home;
+  label: string;
+  href?: string;
+  external?: boolean;
+}
+
+const tabs: TabItem[] = [
   { id: "home", icon: Home, label: "Home" },
-  { id: "bonus", icon: BookOpen, label: "Libro" },
+  { id: "bonus", icon: BookOpen, label: "Libro", href: "https://libro.immobiliarcoach.com", external: true },
   { id: "consulenze", icon: ClipboardList, label: "Consulenze" },
   { id: "prenota", icon: Calendar, label: "Prenota" },
+  { id: "quiz", icon: HelpCircle, label: "Quiz", href: "https://quiz.immobiliarcoach.com", external: true },
 ];
 
 const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
-  const handleClick = (id: TabName) => {
-    onTabChange(id);
+  const handleClick = (tab: TabItem) => {
+    if (tab.external && tab.href) {
+      window.open(tab.href, "_blank", "noopener,noreferrer");
+      return;
+    }
+    onTabChange(tab.id as TabName);
   };
 
   return createPortal(
@@ -27,7 +40,7 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
         boxShadow: "0 -2px 10px rgba(0,0,0,0.1)",
         paddingBottom: 'env(safe-area-inset-bottom, 0px)',
         WebkitTransform: 'translateZ(0)',
-        touchAction: 'none', // prevent nav from capturing scroll-direction touches
+        touchAction: 'none',
       }}
     >
       <div
@@ -35,11 +48,11 @@ const BottomBar = ({ activeTab, onTabChange }: BottomBarProps) => {
         style={{ height: 88, padding: "12px 0" }}
       >
         {tabs.map((tab) => {
-          const isActive = activeTab === tab.id;
+          const isActive = activeTab === tab.id && !tab.external;
           return (
             <button
               key={tab.id}
-              onClick={() => handleClick(tab.id)}
+              onClick={() => handleClick(tab)}
               className="flex flex-col items-center justify-center flex-1 h-full transition-colors"
             >
               <tab.icon
