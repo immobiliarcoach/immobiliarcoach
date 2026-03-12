@@ -43,7 +43,7 @@ const HomeTab = ({ onNavigate }: HomeTabProps) => {
               Scopri come funziona ↓
             </button>
             <button onClick={() => onNavigate("bonus")} className="btn-secondary-white w-full sm:w-auto" style={{ minHeight: 48 }}>
-              Ricevi 3 strumenti gratuiti →
+              Scarica il libro gratis →
             </button>
           </div>
           <p className="text-white/60 text-xs md:text-sm">
